@@ -25,13 +25,13 @@ body {
     box-shadow : 2px 2px 2px #99A1A3;
 }
 
-imgid{
+#imgid{
     position:absolute;
     top :25%;
     left:30%;
 }
 
-divid{
+#divid{
     position:absolute;
     top :50%;
     left:80%;
