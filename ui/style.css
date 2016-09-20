@@ -27,12 +27,12 @@ body {
 
 #imgid{
     position:absolute;
-    top :25%;
-    left:30%;
+    top :50px;
+    left:50px;
 }
 
 #divid{
     position:absolute;
-    top :50%;
-    left:80%;
+    top :50px;
+    left:150px;
 }
