@@ -16,6 +16,10 @@ body {
     font-weight: bold;
 }
 
+.fstyle{
+    font-style: italic; 
+}
+
 .img-medium {
     height: 200px;
     box-shadow : 2px 2px 2px #99A1A3;
