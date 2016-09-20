@@ -26,13 +26,13 @@ body {
 }
 
 imgid{
-    position:relative;
+    position:absolute;
     top :25%;
     left:30%;
 }
 
 divid{
-    position:relative;
+    position:absolute;
     top :50%;
     left:80%;
 }
