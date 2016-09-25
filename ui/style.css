@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color:  #A8B0B3;
+    background-color:  white;
     margin-top: 75px;
 }
 
@@ -37,4 +37,15 @@ body {
     top :50px;
     left:300px;
     padding-right: 30px;
+}
+
+#lineid{
+  position:absolute;
+  top :45px;
+  left:270px;
+}
+#line1{
+  height:600px;
+  width:15px;
+
 }
