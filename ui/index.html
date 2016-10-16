@@ -3,19 +3,40 @@
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
-    <body>
-        <div id = "imgid" class="center">
-            <img src="/ui/madi2.png" class="img-medium"/>
+
+
+    <body >
+        <div>
+          <img src="/ui/cooltext70.png" id="cooltext" class="float"/>  
+        </div><br/>
+
+        <div id="main1">
+
+            <div class = "right">
+                <img src="/ui/nesh.jpg" class=" img-medium "/>
+            </div> <br>
+
+            <p class = "bold">Personal</p>
+            <p>I'm Nesa Benjamin</p><hr/>
+            <p class = "bold">Professional</p>
+            <p>I work at VOC Port</p><hr/>
+            <div class="right">
+                <p>Comments
+                <p><textarea id="txtarea" name="comments" rows="5" cols="30">Type in your comment's here...
+                </textarea></p>
+            </div>
+            <div class="center">
+            <input type="button" onclick="sub()" value="Submit" id= "but"></div>
         </div>
-        <div id = "lineid">
-          <img src="/ui/line.png" id = "line1"/>
-        </div>
-        <br>
-        <div id = "divid" class="center text-big bold fstyle">
-            Hi! I am  Nesa Benjamin <p> And this is my webapp-hosting with IMAD-Hasura Shared hosting</p><br/>
-            <p> (site1 construction on progress...)</p>
-        </div>
+            
+            <div id="comment_box">
+            Comments <hr/><br/>
+            </div>
+        <br/>
         <script type="text/javascript" src="/ui/main.js">
+        </script>
+        <script>            
+            function sub(){alert(document.getElementById("txtarea").value);}
         </script>
     </body>
 </html>
