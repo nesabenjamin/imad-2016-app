@@ -14,7 +14,7 @@ body {
 }
 
 .float {
-	float :right;
+	float :left;
 }
 .text-big {
     font-size: 300%;
