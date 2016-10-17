@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    background: linear-gradient(to left,#9ab3e5, #ffffff);
     color:#000066;
     padding:0px;
     margin-top: 5%;
@@ -25,8 +26,9 @@ body {
     font-weight: bold;
 }
 
-.img-medium {
+.main_img {
    height: 150px;
+   opacity: 0.8;
 }
 
 
@@ -35,10 +37,11 @@ body {
     border-width: 1px;
 	border-color:#99b3ff;
 	margin-top: 160px;
-	margin-left:150px;
-	margin-right:35%;
-	background-color:#ccd9ff;
+	margin-left:125px;
+	margin-right:33%;
+	background-color:#eaeffa;
 	padding: 15px 15px 15px 15px;
+    box-shadow: 1px 5px 5px #1d3b7c;
 }
 
 /*#cooltext{}*/
@@ -46,15 +49,29 @@ body {
 	border-style: solid;
     border-width: 1px;
     border-color:#99b3ff;
-	background-color:#ccd9ff;
+	background-color:#eaeffa;
 	position:absolute;
-	top: 33%;
+	top: 52%;
 	left:75%;
 	height: 300px;
-	width: 200px;
+	width: 170px;
 	padding: 15px 15px 15px 15px;
+    box-shadow: 1px 5px 5px #1d3b7c;
 }
 
+#madi{
+    position:absolute;
+    top: 1%;
+    left:75%;
+    
+}
+
+
+.madi_png{
+    opacity: 0.7;
+    height: 250px;
+    width: 200px;
+}
 .but{
     background-color: #000066; 
     border: none;
@@ -64,9 +81,11 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
+    box-shadow: 1px 1px 1px #1d3b7c;
 }
 
 #cooltext{
  height: 100px;
  width:70%;
+ box-shadow: 1px 1px 5px #1d3b7c;
 }
