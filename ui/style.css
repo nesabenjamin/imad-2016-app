@@ -33,6 +33,8 @@ body {
 
 .madi_png{
     opacity: 0.7;
+    height:100;
+    width:70%;
    
 }
 .but{
@@ -79,8 +81,7 @@ body {
     position:absolute;
     top: 2%;
     left:78%;
-    height:100;
-    width:70%;
+
 }
 
 
