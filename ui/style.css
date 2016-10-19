@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
-    background: linear-gradient(to left,#9ab3e5, #ffffff);
-    color:#000066;
+    background: linear-gradient(to bottom right, #ffffff,#9ab3e5);
+    color:#193366;
     padding:0px;
     margin-top: 5%;
 	margin-left:0px;
@@ -32,13 +32,13 @@ body {
 }
 
 .madi_png{
-    opacity: 0.7;
-    height:165px;
+    opacity: 0.5;
+    height:100%;
     width:100%;
    
 }
 .but{
-    background-color: #000066; 
+    background-color: #193366; 
     border: none;
     color: white;
     padding: 10px 22px;
@@ -46,7 +46,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    box-shadow: 1px 1px 1px #1d3b7c;
+    box-shadow: 1px 1px 1px #99b3ff;
 }
 
 
@@ -59,7 +59,7 @@ body {
 	margin-right:33%;
 	background-color:#eaeffa;
 	padding: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px #1d3b7c;
+    box-shadow: 1px 1px 1px #99b3ff;
 }
 
 /*#cooltext{}*/
@@ -69,17 +69,17 @@ body {
     border-color:#99b3ff;
 	background-color:#eaeffa;
 	position:absolute;
-	top: 200px;
-	left:1050px;
+	top: 245px;
+	left:75%;
 	height: 300px;
-	width: 200px;
+	width: 170px;
 	padding: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px #1d3b7c;
+    box-shadow: 5px 5px 5px #99b3ff;
 }
 
 #madi{
     position:absolute;
-    top: 2%;
+    top: 5px;
     left:78%;
 
 }
@@ -89,5 +89,5 @@ body {
 #cooltext{
  height: 100px;
  width:74%;
- box-shadow: 1px 1px 5px #1d3b7c;
+ box-shadow: 1px 1px 1px #99b3ff;
 }

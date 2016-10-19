@@ -1,0 +1,25 @@
+.container{
+	background-color:#eaeffa;
+	color:#193366;
+	margin: 0px auto;
+	border: 1px solid #99b3ff;
+	border-radius: 15px;
+}
+
+#madi{
+	height: 75px;
+	width:100%;
+	border-radius: 2px;
+	opacity: 0.8;
+}
+
+#comments{
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+	background-color:#193366;
+	color:white;
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+}
