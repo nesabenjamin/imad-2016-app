@@ -85,10 +85,31 @@ body {
 
 }
 
-
-
 #cooltext{
  height: 100px;
  width:74%;
  box-shadow: 1px 1px 1px #99b3ff;
 }
+
+
+nav ul{
+	margin:0;
+}
+nav ul li{
+	display:inline-block;
+	list-style-type:none;
+	float:right;
+	background:black;
+	margin:1px;
+	padding:5px 15px;
+}
+nav ul li a{
+		color:white;
+	}
+
+
+
+
+
+
+
