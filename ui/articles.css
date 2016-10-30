@@ -41,3 +41,11 @@ nav ul li{
 nav ul li a{
 		color:white;
 	}
+	
+	
+li a:hover {
+    background-color: #111;
+}
+	
+	
+	
