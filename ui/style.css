@@ -3,9 +3,7 @@ body {
     background: linear-gradient(to bottom right, #ffffff,#9ab3e5);
     color:#193366;
     padding:0px;
-    margin-top: 5%;
-	margin-left:0px;
-	margin-right:0px;
+    margin:2% 10% 10% 10%;
 }
 /*#bd {background-color:hsla(290,60%,70%,0.3);}*/
 .center {
