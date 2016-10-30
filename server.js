@@ -20,7 +20,9 @@ app.get('/articles.html', function (req, res) {
 app.get('/ui/articles.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'articles.css'));
 });
-
+app.get('/articles_css.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'articles_css.html'));
+});
 
 
 app.get('/ui/madi.png', function (req, res) {
