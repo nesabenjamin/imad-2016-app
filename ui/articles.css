@@ -1,7 +1,10 @@
+body{
+    margin:50px auto;
+    }
+
 .container{
 	background-color:#eaeffa;
 	color:#193366;
-	margin: 20px auto;
 	border: 1px solid #99b3ff;
 	border-radius: 15px;
 }
