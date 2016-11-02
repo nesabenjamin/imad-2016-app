@@ -7,9 +7,9 @@ console.log('Loaded!');
         <p>Name <input type="text" id="name"/></p>
         <p> comments <textarea id="txtarea" name="comments" rows="5" cols="30" placeholder="Type in your comment here..."></textarea></p>
          <p class= "center">         
-            <input type="button" onclick="show_comments()" value="Post as a guest" class= "but2"/></p>`;}
-   
-
+            <input type="button" onclick="show_comments()" value="Post as a guest" class= "but2"/></p>`;
+    }
+    
     var list='';
     function show_comments(){
                 var name = document.getElementById("name").value;
@@ -20,19 +20,7 @@ console.log('Loaded!');
                 var inner= document.getElementById("comment");
                 inner.innerHTML=list;
                     
-            }
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
     function show_comments1(){
@@ -52,13 +40,10 @@ console.log('Loaded!');
             			p.innerHTML = list;
     			}
     		}
-
     	};
-
 
         var nameInput = document.getElementById("name");
         var name = nameInput.value;
         request.open('GET','http://127.0.0.1:8080/submit_name?name='+name,true);
         request.send(null);
-        
     }
