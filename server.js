@@ -87,15 +87,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-app.get('/ui/articles.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'articles.css'));
-});
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
+
 
 var counter=0;
 app.get('/counter', function (req, res) {
@@ -104,7 +96,7 @@ app.get('/counter', function (req, res) {
 });
 
 var Pool = new Pool(config);
-app.get('/test-tb', function (req, res) {
+app.get('/test-db', function (req, res) {
   
   pool.query('SELECT * FROM test', function(err, result){
 
@@ -128,7 +120,15 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 });
 
-
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+app.get('/ui/articles.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'articles.css'));
+});
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
