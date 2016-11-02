@@ -1,10 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
-
 var Pool = require('pg').Pool;
-
 var config = {
 	user:'nesabenjamin',
 	database:'nesabenjamin',
@@ -13,13 +10,8 @@ var config = {
 	password: process.env.DB_PASSWORD
 };
 
-
-
-var counter=0;
-app.get('/counter', function (req, res) {
-	counter++;
-  res.send(counter.toString());
-});
+var app = express();
+app.use(morgan('combined'));
 
 var articles = {	
 	 'article_One' : {
@@ -90,8 +82,6 @@ function createTemplate(data){
 	
 }
 
-var app = express();
-app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -119,6 +109,11 @@ app.get('/ui/articles.css', function (req, res) {
 });
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+var counter=0;
+app.get('/counter', function (req, res) {
+	counter++;
+  res.send(counter.toString());
 });
 
 var names = [];
