@@ -8,22 +8,15 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
-app.get('/article_1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article_1.html'));
-});
-
 app.get('/ui/articles.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'articles.css'));
 });
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
 
 var counter=0;
 app.get('/counter', function (req, res) {
@@ -123,9 +116,6 @@ app.get('/ui/nesh.jpg', function (req, res) {
 app.get('/ui/cooltext70.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'cooltext70.png'));
 });
-
-
-
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
