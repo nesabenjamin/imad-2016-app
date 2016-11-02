@@ -13,36 +13,7 @@ var config = {
 	password: process.env.DB_PASSWORD
 };
 
-var app = express();
-app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
-var Pool = new Pool(config);
-app.get('/test-tb', function (req, res) {
-  
-  pool.query('SELECT * FROM test', function(err, result){
-
-  		if(err){
-  			res.status(500).send(err.toString());
-  		} else {
-  			res.send(JSON.stringify(result));
-  		}
-  });
-
-});
-
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-app.get('/ui/articles.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'articles.css'));
-});
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
 
 var counter=0;
 app.get('/counter', function (req, res) {
@@ -118,6 +89,37 @@ function createTemplate(data){
 	return htmlTemplate;
 	
 }
+
+var app = express();
+app.use(morgan('combined'));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+var Pool = new Pool(config);
+app.get('/test-tb', function (req, res) {
+  
+  pool.query('SELECT * FROM test', function(err, result){
+
+  		if(err){
+  			res.status(500).send(err.toString());
+  		} else {
+  			res.send(JSON.stringify(result));
+  		}
+  });
+
+});
+
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+app.get('/ui/articles.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'articles.css'));
+});
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 
 var names = [];
 app.get('/submit_name/:name', function (req, res) {
