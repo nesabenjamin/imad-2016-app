@@ -1,1 +1,82 @@
+<html>
+<head>
+	<title>FINAL INDEX</title>
+	<link rel="stylesheet" type="text/css" href="/ui/newindexstyle.css">
+</head>
+<body>
+	
+<div id="wrapper">
+	<div id="container">
+		<header>
+			<br/><br/>
+			<img src="/ui/cooltext70.png" id="cooltxt"/>
+        	<div id="madi"><img src="/ui/madi.png" id="madi_img"/></div>
+		</header>
+		<nav>			
+			<ul>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Articles</a>
+				<ul>
+					<li><a href="#"> APIs </a></li>
+					<li><a href="#"> NODE JS vs PHP </a></li>
+					<li><a href="#"> History of Programming Languages </a></li>
+				</ul></li>
+			<li><a href="#">Contact</a>
+				<ul>
+						<li><a href="#"> Office </a></li>
+						<li><a href="#"> Resident </a></li>
+				</ul></li>
+			<li><a href="#">Home</a></li>
+			</ul>
+		</nav><br/><br/><br/><br/>
+		<div id="main">
+			<div id = "div1">
+                <img src="/ui/nesh.jpg" id="nesh_img" class="nesh_img"/>
+            </div>
+       
+            <div id = "div2">
+                <h3>Personal</h3>
+                <ul style="list-style-type:none">
+                  <li>I am Nesa Benjamin</li>
+                  <li>Post Graduate</li>
+                  <li>Tuticorin, Tamilnadu</li>
+                </ul>
+                <hr/>
+                <h3>Profession</h3>
+                <ul style="list-style-type:none">
+                  <li>I work at VOC Port</li>
+                  <li>Tuticorin, Tamilnadu </li>
+                </ul>
+                <hr/>
+            </div> 
+            <div id = "div3">
+                <p id= "pcomments"><strong>Comments</strong></p>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name"/>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email"/>
+                </div>
+                <div>
+                    <label for="txtarea">Comment </label>
+                    <textarea id="txtarea" name="txtarea" rows="5" cols="30" placeholder="Type in your comment's here..."></textarea>
+                </div>
+                <div>
+                <button onclick="sub()" class="but">Post Comment</button></div>
+            </div>
 
+		</div>
+		<footer>
+		</footer>
+	</div>
+	<br/><br/><marquee BGCOLOR="#ccd9ff">My web-app hosting with IMAD-Hasura shared hosting</marquee><br/><br/>
+</div>
+	<script>            
+        function sub(){alert(document.getElementById("txtarea").value+"Your comment await moderation");}
+    </script>
+    <script type="text/javascript" src="/ui/main.js"></script>
+
+</body>
+</html>
