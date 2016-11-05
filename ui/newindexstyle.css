@@ -74,7 +74,7 @@ nav{
 	}
 	li:hover li{
 		width: 135px;
-		text-align:justify; 
+		text-align:center; 
 	}
 	li:hover a {
 		background:#24478f;
