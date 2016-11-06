@@ -58,7 +58,7 @@ nav{
 		padding:5px 10px;
 		margin: 1px;
 		margin-right: 0px;
-		background-color:#0f1f3d;
+		background-color: #193366;
 		color: white;
 		text-decoration: none;
 		
@@ -77,7 +77,7 @@ nav{
 		text-align:center; 
 	}
 	li:hover a {
-		background:#24478f;
+		background:#0f1f3d;
 		color:white;
 	}
 	li:hover li a:hover{
