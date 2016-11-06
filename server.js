@@ -84,7 +84,7 @@ function createTemplate(data){
 
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'newindex.html'));
 });
 
 app.get('/newindex.html', function (req, res) {
