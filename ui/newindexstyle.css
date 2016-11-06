@@ -91,7 +91,7 @@ nav{
 }
 #main{
 	border: 1px solid #7094db;
-	margin: 0 auto;
+	margin-left:100px;
 	padding: 15px;
 	padding-right:2px;
 	width: 500px;
