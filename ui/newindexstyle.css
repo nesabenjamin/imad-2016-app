@@ -28,12 +28,12 @@ body{
 }
 #cooltxt{
 	height: 95px;
-	width: 700px;
+	width: 675px;
 }
 #madi{
 	position: absolute;
 	top:2px;
-	right:25px;
+	right:20px;
 }
 #madi_img{
 	width: 150px;
