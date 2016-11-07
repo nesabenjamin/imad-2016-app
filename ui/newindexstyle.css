@@ -74,7 +74,7 @@ nav{
 		margin-left: -40px;        		
 	}
 	li:hover li{
-		width: 135px;
+		width: 100%;
 		text-align:left; 
 	}
 	li:hover a {
