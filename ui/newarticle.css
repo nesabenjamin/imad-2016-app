@@ -1,7 +1,7 @@
 body{
 	background-image: url("/ui/articleblur.png");
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
 	
@@ -21,8 +21,8 @@ body{
 	border-radius: 50px;
 }
 #container{
-	background: linear-gradient(to bottom right, #fff,#142952);
-    border: 1px solid black;
+	background: linear-gradient(to bottom right, #fff,#d6e0f5);
+    border: 1px solid #99b3e6;
     background-color: white;
     color: #193366;
 	margin: 0 auto;
