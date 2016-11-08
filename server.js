@@ -167,6 +167,9 @@ app.get('/ui/cooltext70.png', function (req, res) {
 app.get('/ui/mainbgblur.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'mainbgblur.png'));
 });
+app.get('/ui/articleblur.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'articleblur.png'));
+});
 
 
 
