@@ -92,3 +92,7 @@ nav{
 strong{
     color:red;
 }
+#date{
+    text-align:right;
+    font-style: italic;
+}
