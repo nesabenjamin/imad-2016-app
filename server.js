@@ -94,7 +94,7 @@ app.get('/ui/newindexstyle.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'newindexstyle.css'));
 });
 app.get('/newarticle.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'newarticle.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'newarticle2.html'));
 });
 app.get('/ui/newarticle.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'newarticle.css'));
