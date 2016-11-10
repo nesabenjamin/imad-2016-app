@@ -4,11 +4,11 @@ body{
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
-	opacity:1;
+	opacity:0.9;
 }
 
 #wrapper{
-	border: 0px solid black;
+	border: 0;
 	margin: 0 auto;
 	width: 850px;
     height: 100%;
@@ -21,13 +21,13 @@ body{
 	border-radius: 50px;
 }
 #container{
-	background: linear-gradient(to bottom right, #fff,#adc2eb);
-    border: 1px solid #99b3e6;
-    color: #193366;
+	background: linear-gradient(to bottom right, #fff,#ebf0fa);
+    border: 1px solid #142952;
+    color: #142952;
 	margin: 0 auto;
 	width: 800px;
     height: 100%;
-    padding: 25px;	
+    padding: 20px;	
     border-radius: 25px;
 
 }
@@ -78,16 +78,26 @@ nav{
 	}
 .but{
     background-color: #193366; 
-    border: 0;
-    border-radius:15px;
+    border: none;
+    border-radius:3px;
     color: white;
     padding: 5px 200px 5px 200px ;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
-    box-shadow: 1px 1px 1px #99b3ff;
     width: 100%;
+}
+.but2{
+    background-color: #193366; 
+    border: none;
+    border-radius:0px;
+    color: white;
+    padding: 5px 5px 5px 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
 }
 strong{
     color:red;
@@ -95,4 +105,36 @@ strong{
 #date{
     text-align:right;
     font-style: italic;
+}
+#div3{
+	width:375px;
+	float: right;
+}
+#div3 div{
+	float:left;
+	width: 375px;
+	padding:5px;
+}
+
+#div3 label{
+	float:left;
+	width: 100px;
+}
+#div3 textarea, input{
+	width: 250px;
+}
+#div3 input:focus, textarea:focus{
+	background-color:#ebf0fa;
+
+}
+
+#p1{
+	text-align: right;
+ 		color: red;
+}
+#p3{
+	font-style: italic;
+}
+#p0,#p1,#p2{
+	clear: both;
 }
