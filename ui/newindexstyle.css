@@ -135,4 +135,9 @@ nav{
     display: inline-block;
     font-size: 12px;
    }
-
+.left{
+    float:left;
+}
+.right{
+    float: right;  
+}
