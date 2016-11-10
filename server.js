@@ -134,7 +134,6 @@ function createTemplate2(data){
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'newindex.html'));
 });
-
 app.get('/newindex.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'newindex.html'));
 });
@@ -147,7 +146,6 @@ app.get('/newarticle.html', function (req, res) {
 app.get('/ui/newarticle.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'newarticle.css'));
 });
-
 
 var counter=0;
 app.get('/counter', function (req, res) {
@@ -165,7 +163,6 @@ app.get('/test-db', function (req, res) {
   		}
   });
 });
-
 
 app.get('/articles/:articleName', function (req, res) {
 	pool.query("SELECT * FROM articles WHERE id = '"+req.params.articleName +"'", function(err, result){
@@ -207,11 +204,9 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
 app.get('/ui/nesh.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'nesh.jpg'));
 });
-
 app.get('/ui/cooltext70.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'cooltext70.png'));
 });
@@ -221,8 +216,6 @@ app.get('/ui/mainbgblur.png', function (req, res) {
 app.get('/ui/articleblur.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'articleblur.png'));
 });
-
-
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
