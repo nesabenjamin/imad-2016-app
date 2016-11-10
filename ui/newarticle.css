@@ -4,7 +4,6 @@ body{
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
-	opacity:0.9;
 }
 
 #wrapper{
@@ -13,7 +12,7 @@ body{
 	width: 850px;
     height: 100%;
     position: relative;	
-
+    background-color: rgba(0,0,255,0.5);
 }
 #cooltxt{
 	height: 95px;
