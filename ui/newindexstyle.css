@@ -90,6 +90,7 @@ nav{
 	height: 100px;
 }
 #main{
+    background: linear-gradient(to bottom right, #fff,#ebf0fa);
 	border: 1px solid #7094db;
 	margin-left:100px;
 	padding: 15px;
