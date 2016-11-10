@@ -14,7 +14,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {	
-	 'article_One' : {
+	 'article_one' : {
 		title:'Article ONE| 1 Nesa benjamin',
 		heading: 'Article One',
 		date : '29.10.2016',
@@ -25,13 +25,13 @@ var articles = {
 	            <p>Article - ONEArticle - ONEArticle - ONEArticle - ONEArticle - ONEArticle - ONE
 	            Article - ONEArticle - ONEArticle - ONE</p>`
 	},
-	'article_Two' : {
+	'article_two' : {
 		title:'Article TWO| 2 Nesa benjamin',
 		heading: 'Article Two',
 		date : '30.10.2016',
 		content:`<p>Article - 22222222222222222222222222222222222</p>`
 	},
-	'article_Three' : {
+	'article_three' : {
 		title:'Article THREE| 3 Nesa benjamin',
 		heading: 'Article Three',
 		date : '31.10.2016',
