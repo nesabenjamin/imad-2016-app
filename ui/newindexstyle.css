@@ -136,8 +136,8 @@ nav{
     font-size: 12px;
    }
 .left{
-    float:left;
+    text-align:left;
 }
 .right{
-    float: right;  
+    text-align:right;  
 }
