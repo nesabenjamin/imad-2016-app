@@ -49,6 +49,9 @@ console.log('Loaded!');
     }
     
     function logIN (){
+        var template =``;
+        
+        
         
     }
 
