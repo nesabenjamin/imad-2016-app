@@ -103,7 +103,7 @@ nav{
 }
 #div3{
 	width:375px;
-	float: right;
+	clear:both;
 }
 #div3 div{
 	float:left;
