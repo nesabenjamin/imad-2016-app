@@ -47,3 +47,11 @@ console.log('Loaded!');
         request.open('GET','http://127.0.0.1:8080/submit_name?name='+name,true);
         request.send(null);
     }
+    
+    function logIN (){
+        
+    }
+
+    function signUP(){
+        
+    }
