@@ -64,8 +64,8 @@ function logIN (){
                 <button onclick="login()" class="but">Login</button>
 	    	</div> `;  
 	    	
-	var p = document.getElementById("p2");
-			p.innerHTML = list;
+	var div3 = document.getElementById("div3");
+			div3.innerHTML = template;
   }
 
  
@@ -95,6 +95,8 @@ function signUP(){
                         </div>
                         <div>
                         <button onclick="signup()" class="but">Register</button>
-        	    	</div> `;  
+        	    	</div> `;
+    	var div3 = document.getElementById("div3");
+		div3.innerHTML = template;
  
  }
