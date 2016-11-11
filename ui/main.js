@@ -48,13 +48,54 @@ console.log('Loaded!');
         request.send(null);
     }
     
-    function logIN (){
-        var template =``;
-        
-        
-        
-    }
+    
 
-    function signUP(){
+function logIN (){
         
-    }
+	var template =``;
+  
+		<div>
+                    <label for="username">User Name</label>
+                    <input type="text" id="username"/>
+                </div>
+                <div>
+                    <label for="pword">Password</label>
+                    <input type="password" id="pword"/>
+                </div>                
+                <div>
+                <button onclick="login()" class="but">Login</button>
+		</div>     
+  }
+
+ 
+
+
+function signUP(){
+ 
+
+		<div>
+                    <label for="username">User Name</label>
+                    <input type="text" id="username"/>
+                </div>
+                <div>
+                    <label for="pword">Password</label>
+                    <input type="password" id="pword"/>
+                </div> 
+    		<div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email"/>
+                </div>
+    		<div>
+                    <label for="dob">DOB</label>
+                    <input type="text" id="dob"/>
+                </div>
+   		<div>
+                    <label for="sex">Gender</label>
+                    <input type="checkbox" id="sex" value="M"/>Male</input>
+		    <input type="checkbox" id="sex" value="F"/>FeMale</input>
+                </div>
+                <div>
+                <button onclick="signup()" class="but">Register</button>
+		</div>   
+ 
+ }
