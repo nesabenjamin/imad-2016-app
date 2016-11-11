@@ -132,7 +132,7 @@ function createTemplate2(data){
 }
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'newindex.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'loginindex.html'));
 });
 app.get('/newindex.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'newindex.html'));
