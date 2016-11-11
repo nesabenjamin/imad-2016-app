@@ -51,7 +51,7 @@ console.log('Loaded!');
     
 
 function logIN (){
-        
+        alert("innn");
 	var template =`	<div>
                     <label for="username">User Name</label>
                     <input type="text" id="username"/>
