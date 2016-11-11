@@ -62,7 +62,10 @@ function logIN (){
                 </div>                
                 <div>
                 <button onclick="login()" class="but">Login</button>
-	    	</div> `;   
+	    	</div> `;  
+	    	
+	var p = document.getElementById("p2");
+			p.innerHTML = list;
   }
 
  
