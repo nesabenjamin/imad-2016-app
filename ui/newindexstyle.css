@@ -150,6 +150,9 @@ input{
     display: inline-block;
     font-size: 12px;
    }
+#logbut,#signbut{
+    color:#ffffb3;
+}
 .left{
     float:left;
 }
