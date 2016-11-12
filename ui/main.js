@@ -87,7 +87,7 @@ function signUP(){
                     </div>
                     <div>
                         <label for="pword">Password</label>
-                        <input type="password" maxlength="6" id="pword" size="20" required="required"/>
+                        <input type="password" maxlength="6" id="pword" size="15" required="required"/>
                     </div> 
                     <div>
                             <label for="dob">DOB</label>
@@ -106,7 +106,7 @@ function signUP(){
                     <div>
                             <label for="email">E-mail</label>
                             <input type="email" id="email"/>
-                    </div><br/>
+                    </div><br/><br/>
                     <div>
                         <button onclick="signup()" class="but">Register</button>
         	    	</div>
