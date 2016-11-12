@@ -62,7 +62,7 @@ function logIN (){
                     <input type="password" id="pword" size="15" required="required"/>
                 </div>                
                 <div><br/>
-                <button onclick="login()" class="but">Login</button>
+                <button onclick="login()" id="logbut" class="but">Login</button>
 	    	    </div> </center></form>`;  
 	    	
 	var div3 = document.getElementById("div3");
@@ -108,7 +108,7 @@ function signUP(){
                             <input type="email" id="email" size="17" required="required"/>
                     </div>
                     <div><br/>
-                        <button onclick="signup()" class="but">Register</button>
+                        <button onclick="signup()" id="signbut" class="but">Register</button>
         	    	</div></center>
                     </form> `;
 	var div3 = document.getElementById("div3");
