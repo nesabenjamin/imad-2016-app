@@ -55,7 +55,6 @@ hr{
 nav{
 	float: right;
 }
-
 	nav ul li{
 		display: block;
 		position: relative;
@@ -72,7 +71,6 @@ nav{
 		background-color: #193366;
 		color: white;
 		text-decoration: none;
-		
 	}
 	ul li a:hover{
 		background:#99b3e6;
