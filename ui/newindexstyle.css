@@ -104,17 +104,17 @@ nav{
 }
 #div3{
 	width:375px;
-	float:center;
+	float:left;
 	padding: 100px;
 }
 #div3 div{
-	float:center;
+	float:left;
 	width: 375px;
 	padding:5px;
 }
 
 #div3 label{
-	float:center;
+	float:left;
 	width: 100px;
 }
 #div3 textarea, input:text{
