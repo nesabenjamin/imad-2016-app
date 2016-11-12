@@ -38,10 +38,10 @@ header{
 
 }
 
-#nav{
+nav{
 	float: left;
 }
-	#nav ul li{
+	nav ul li{
 		display: block;
 		position: relative;
 		float: left;
