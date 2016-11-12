@@ -79,7 +79,7 @@ function signUP(){
  	var template =`	<form><center>
                     <div><br/>
                     <label for="name">Name</label>
-                    <input type="text" id="name" size="15" required="required"/>
+                    <input type="text" id="name" size="25" required="required"/>
                     </div>
                     <div>
                     <label for="username">User Name</label>
