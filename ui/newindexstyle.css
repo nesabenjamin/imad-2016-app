@@ -6,23 +6,33 @@ body{
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-	opacity:0.9;
+	opacity: 0.9;
 }
 
 #wrapper{    
-    background: linear-gradient(to bottom right, #fff,#0a1429);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9),rgba(10, 20, 41, 0.9));
 	margin: 0 auto;
 	margin-top: 15px;
 	margin-bottom: 0;
 	padding-bottom: 0;
 	width: 800px;
-	height: 900px;
-	background-color: white;
+	height: 100%;
+	overflow: hidden;
 	color: #142952;
-	border: 1px solid #000;
+	border: 1px solid #050a14;
 	position: relative;
 }
-
+#main{
+    background: linear-gradient(to bottom right, #fff,#d6e0f5);
+	border: 1px solid #24478f;
+	border-bottom: 3px solid #142952;
+	margin-left:90px;
+	padding: 15px;
+	padding-right:2px;
+	width: 500px;
+	height: 100%;
+	overflow: hidden;
+}
 
 #container{
 }
@@ -89,24 +99,17 @@ nav{
 	width:85px;
 	height: 100px;
 }
-#main{
-    background: linear-gradient(to bottom right, #fff,#d6e0f5);
-	border: 1px solid #7094db;
-	margin-left:90px;
-	padding: 15px;
-	padding-right:2px;
-	width: 500px;
-	height: 700px;
-}
+
 #pcomments{
 	text-align:right;
 }
 #div3{
 	width:375px;
-	clear:both;
+	float:center;
+	padding-left: 50px;
 }
 #div3 div{
-	float:left;
+	float:center;
 	width: 375px;
 	padding:5px;
 }
@@ -115,15 +118,22 @@ nav{
 	float:left;
 	width: 100px;
 }
-#div3 textarea, input{
-	width: 250px;
+#div3 textarea, input:text{
+	width: 150px;
 }
 #div3 input:focus, textarea:focus{
 	background-color:#ebf0fa;
 
 }
+
+#slogIN{
+color:green;
+}
+#ssignUP{
+color: red;
+}
 .but{
-	float: right;
+	
 	width: auto;
 	margin-right: 10px;
 	background-color:#142952;
@@ -140,4 +150,7 @@ nav{
 }
 .right{
     float:right;  
+}
+.bold{
+	font-weight: bold;
 }
