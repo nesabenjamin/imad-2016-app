@@ -76,7 +76,7 @@ function logIN (){
 
 function signUP(){
     document.getElementById("log").style.visibility = "hidden";
- 	var template =`	<form>
+ 	var template =`	<form><center>
                     <div><br/>
                     <label for="name">Name</label>
                     <input type="text" id="name" size="20" required="required"/>
@@ -109,7 +109,7 @@ function signUP(){
                     </div><br/><br/>
                     <div>
                         <button onclick="signup()" class="but">Register</button>
-        	    	</div>
+        	    	</div></center>
                     </form> `;
 	var div3 = document.getElementById("div3");
 	div3.innerHTML = template; 
