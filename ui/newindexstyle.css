@@ -120,6 +120,7 @@ nav{
 }
 #div3 textarea, input:text{
 	width: 150px;
+	border-radius:3px;
     border:  1px solid #7094db;
 }
 #div3 input:focus, textarea:focus{
