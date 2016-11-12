@@ -15,13 +15,13 @@ body{
 }
 #cooltxt{
 	height: 75px;
-	width: 50%;
+	width: 40%;
 	border-radius: 2px;
 	float: right;
     margin-bottom:1px;
 }
 header{
-    float: left;
+    float: right;
 }
 #container{   
     clear:both;
