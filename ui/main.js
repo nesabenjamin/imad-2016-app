@@ -51,52 +51,69 @@ console.log('Loaded!');
     
 
 function logIN (){
-        alert("innn");
-	var template =`	<div>
+        //alert("innn");
+	var template =`	<form><center>
+                <div><br/>
                     <label for="username">User Name</label>
-                    <input type="text" id="username"/>
+                    <input type="text" id="username" size="15" required="required"/>
                 </div>
                 <div>
                     <label for="pword">Password</label>
-                    <input type="password" id="pword"/>
+                    <input type="password" id="pword" size="15" required="required"/>
                 </div>                
                 <div>
                 <button onclick="login()" class="but">Login</button>
-	    	</div> `;  
+	    	    </div> </center></form>`;  
 	    	
 	var div3 = document.getElementById("div3");
 			div3.innerHTML = template;
   }
 
- 
+ function login(){
+    alert("Logged in");
+ }
 
 
 function signUP(){
- 	var template =`	<div>
+    document.getElementById("log").style.visibility = "hidden";
+ 	var template =`	<form><center>
+                    <div><br/>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" size="15" required="required"/>
+                    </div>
+                    <div>
                     <label for="username">User Name</label>
-                    <input type="text" id="username"/>
+                    <input type="text" id="username" size="15" required="required"/>
                     </div>
                     <div>
                         <label for="pword">Password</label>
-                        <input type="password" id="pword"/>
+                        <input type="password" maxlength="6" id="pword" size="15" required="required"/>
                     </div> 
-            		<div>
-                            <label for="email">Email</label>
-                            <input type="text" id="email"/>
-                        </div>
-            		<div>
+                    <div>
+                            <label for="gender">Gender</label>
+                            <input type="radio" name="gender" id="gender" value="male" checked> M
+                            <input type="radio" name="gender" id="gender" value="female"> F
+                    </div>
+                    <div>
+                            <label for="tel">Phone no</label>
+                            <input type="number" name="cell" id="cell" min="7000000000" max="9999999999" maxlength="10" 
+                            required="required"/>
+                    </div>
+                    <div>
                             <label for="dob">DOB</label>
-                            <input type="text" id="dob"/>
-                        </div>
-           	    	<div>
-                            <label for="sex">Gender</label>
-                            <input type="checkbox" id="sex" value="M"/>Male</input>
-        		    <input type="checkbox" id="sex" value="F"/>FeMale</input>
-                        </div>
-                        <div>
+                            <input type="date" id="dob" required="required"/>
+                    </div>
+                    <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email"/>
+                    </div>
+                    <div>
                         <button onclick="signup()" class="but">Register</button>
-        	    	</div> `;
-    	var div3 = document.getElementById("div3");
-		div3.innerHTML = template;
- 
- }
+        	    	</div></center>
+                    </form> `;
+	var div3 = document.getElementById("div3");
+	div3.innerHTML = template; 
+}
+function signup (){
+    alert("Registered");
+    }
