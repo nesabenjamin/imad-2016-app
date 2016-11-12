@@ -120,7 +120,7 @@ nav{
 }
 #div3 textarea, input:text{
 	width: 150px;
-	border-color:#7094db;
+    border: solid 1px #7094db;
 }
 #div3 input:focus, textarea:focus{
 	background-color:#ebf0fa;
