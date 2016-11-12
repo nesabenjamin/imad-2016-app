@@ -60,8 +60,8 @@ function logIN (){
                 <div>
                     <label for="pword">Password</label>
                     <input type="password" id="pword" size="15" required="required"/>
-                </div> <br/>               
-                <div>
+                </div>                
+                <div><br/>
                 <button onclick="login()" class="but">Login</button>
 	    	    </div> </center></form>`;  
 	    	
