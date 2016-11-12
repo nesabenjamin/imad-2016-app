@@ -79,11 +79,11 @@ function signUP(){
  	var template =`	<form><center>
                     <div><br/>
                     <label for="name">Name</label>
-                    <input type="text" id="name" size="20" required="required"/>
+                    <input type="text" id="name" size="17" required="required"/>
                     </div>
                     <div>
                     <label for="username">User Name</label>
-                    <input type="text" id="username" size="15" required="required"/>
+                    <input type="text" id="username" size="17" required="required"/>
                     </div>
                     <div>
                         <label for="pword">Password</label>
