@@ -123,6 +123,10 @@ nav{
 	border-radius:3px;
     border:  1px solid #7094db;
 }
+input[type=text]{
+background-color : #99FFCC;
+	border: 1px solid #008000;
+	}
 #div3 input:focus, textarea:focus{
 	background-color:#ebf0fa;
 
