@@ -35,7 +35,6 @@ body{
 nav{
 	float: right;
 }
-
 	nav ul li{
 		display: block;
 		position: relative;
@@ -49,32 +48,30 @@ nav{
 		padding:5px 10px;
 		margin: 1px;
 		margin-right: 0px;
-		background-color: #193366;
+		background-color:#1f3d7a;
 		color: white;
 		text-decoration: none;
-		border-radius: 1px;
-
-		
 	}
 	ul li a:hover{
-		background:#4775d1;
-		color:black;
+		background:#7094db;
+		color:blue;
 	}
 	li:hover ul{
 		display: block;
 		position: absolute;
-		margin-left: -40px;        		
+		margin-left: -40px; 
+		margin-bottom: 0px;
 	}
 	li:hover li{
-		width: 135px;
-		text-align:center; 
+		width: 100%;
+		text-align:left; 
 	}
 	li:hover a {
-		background:#24478f;
+		background:#0f1f3d;
 		color:white;
 	}
 	li:hover li a:hover{
-		background:#2e5cb8;
+		background:#7094db;
 	}
 .but{
     background-color: #193366; 
