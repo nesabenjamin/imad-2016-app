@@ -17,12 +17,11 @@ body{
 	height: 75px;
 	width: 40%;
 	border-radius: 2px;
-	float: right;
+
     margin-bottom:1px;
 }
 
 #container{   
-    clear:both;
     background-color: rgba(235, 240, 250,0.9);
 	/*background: linear-gradient(to bottom right, #fff,#ebf0fa);*/
     border: 1px solid #193366;
