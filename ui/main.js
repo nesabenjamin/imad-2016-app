@@ -115,5 +115,5 @@ function signUP(){
 	div3.innerHTML = template; 
 }
 function signup (){
-    alert("Registered");
+    //alert("Registered");
     }
