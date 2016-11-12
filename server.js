@@ -89,7 +89,7 @@ function createTemplate2(data){
 	var htmlTemplate = `
             <!doctype html>
             <html><head>
-            	<title>${title}</title>
+            	<title> ${title} </title>
             	<link rel="stylesheet" type="text/css" href="/ui/newarticle.css">
             </head>
             <body>
@@ -113,10 +113,9 @@ function createTemplate2(data){
             			</ul>			
             		</nav>	
             		<img src="/ui/cooltext70.png" id="cooltxt"/>
-            	
             		<div id="container">
-            			<p id="date"> ${date}</p>
-            			<h1>${heading}</h1><hr/>
+            			<p id="date"> ${date} </p>
+            			<h1> ${heading} </h1><hr/>
             			${content}
             			<br/>
             			<button onclick="submit()" class="but">COMMENTS</button>
