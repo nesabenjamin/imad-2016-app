@@ -113,7 +113,7 @@ function createTemplate2(data){
             			</ul>			
             		</nav>	
             		<img src="/ui/cooltext70.png" id="cooltxt"/>
-            		<br/><br/><br/>
+            	
             		<div id="container">
             			<p id="date"> ${date}</p>
             			<h1>${heading}</h1><hr/>
