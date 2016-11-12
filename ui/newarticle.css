@@ -123,7 +123,7 @@ strong{
 #div3 input:focus, textarea:focus{
 	background-color:#ebf0fa;
 }
-input{
+input, textarea{
     background-color :#ebf0fa;
 	border: 1px solid #adc2eb;
 	}
