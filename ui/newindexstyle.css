@@ -105,7 +105,7 @@ nav{
 #div3{
 	width:375px;
 	float:center;
-	padding-left: 50px;
+	padding-left: 100px;
 }
 #div3 div{
 	float:center;
@@ -114,7 +114,7 @@ nav{
 }
 
 #div3 label{
-	float:left;
+	float:center;
 	width: 100px;
 }
 #div3 textarea, input:text{
