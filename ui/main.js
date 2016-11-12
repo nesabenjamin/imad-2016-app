@@ -87,7 +87,7 @@ function signUP(){
                     </div>
                     <div>
                         <label for="pword">Password</label>
-                        <input type="password" maxlength="6" id="pword" size="17" required="required"/>
+                        <input type="password" maxlength="6" id="pword" size="20" required="required"/>
                     </div> 
                     <div>
                             <label for="gender">Gender</label>
