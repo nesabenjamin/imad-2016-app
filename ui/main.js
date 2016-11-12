@@ -105,7 +105,7 @@ function signUP(){
                     </div>
                     <div>
                             <label for="email">E-mail</label>
-                            <input type="email" id="email"/>
+                            <input type="email" id="email" size="17"/>
                     </div><br/><br/>
                     <div>
                         <button onclick="signup()" class="but">Register</button>
