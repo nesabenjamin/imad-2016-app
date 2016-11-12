@@ -54,7 +54,7 @@ function logIN (){
         //alert("innn");
 	var template =`	<form><center>
                 <div><br/>
-                    <label for="username">User Name</label>
+                    <label for="username">User name</label>
                     <input type="text" id="username" size="15" required="required"/>
                 </div>
                 <div>
