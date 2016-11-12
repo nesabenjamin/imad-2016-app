@@ -90,11 +90,6 @@ function signUP(){
                         <input type="password" maxlength="6" id="pword" size="20" required="required"/>
                     </div> 
                     <div>
-                            <label for="tel">Phone no</label>
-                            <input type="number" name="cell" id="cell" min="7000000000" max="9999999999" maxlength="10" 
-                            required="required"/>
-                    </div>
-                    <div>
                             <label for="dob">DOB</label>
                             <input type="date" id="dob" required="required"/>
                     </div>
@@ -102,6 +97,11 @@ function signUP(){
                             <label for="gender">Gender</label>
                             <input type="radio" name="gender" id="gender" value="male" checked> M
                             <input type="radio" name="gender" id="gender" value="female"> F
+                    </div>
+                     <div>
+                            <label for="tel">Phone no</label>
+                            <input type="number" name="cell" id="cell" min="7000000000" max="9999999999" maxlength="10" 
+                            required="required"/>
                     </div>
                     <div>
                             <label for="email">E-mail</label>
