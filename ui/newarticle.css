@@ -16,9 +16,9 @@ body{
 #cooltxt{
 	height: 73px;
 	width: 40%;
-	border-radius: 5px;
+	border-radius: 2px;
 	float: right;
-	display:inline;
+    margin-bottom:1px;
 }
 header{
     float: left;
