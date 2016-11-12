@@ -68,12 +68,12 @@ nav{
 		padding:5px 10px;
 		margin: 1px;
 		margin-right: 0px;
-		background-color: #193366;
+		background-color:#1f3d7a;
 		color: white;
 		text-decoration: none;
 	}
 	ul li a:hover{
-		background:#99b3e6;
+		background:#7094db;
 		color:blue;
 	}
 	li:hover ul{
