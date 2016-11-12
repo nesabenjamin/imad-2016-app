@@ -95,7 +95,7 @@ function createTemplate2(data){
             <body>
             	<div id="wrapper">
             		<header><img src="/ui/cooltext70.png" id="cooltxt"/></header>
-            		<nav>
+            		<div id="nav">
             			<ul>
             			<li><a href="#">BLOG</a></li>
             			<li><a href="#">ARTICLES</a>
@@ -111,7 +111,7 @@ function createTemplate2(data){
             				</ul></li>
             			<li><a href="http://nesabenjamin.imad.hasura-app.io/">HOME</a></li>
             			</ul>			
-            		</nav>	
+            		</div>	
             		
             		<div id="container">
             			<p id="date"> ${date} </p>
