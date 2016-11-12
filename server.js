@@ -94,7 +94,7 @@ function createTemplate2(data){
             </head>
             <body>
             	<div id="wrapper">
-            		<!--<header><img src="/ui/cooltext70.png" id="cooltxt"/></header>-->
+            		<header><img src="/ui/cooltext70.png" id="cooltxt"/></header>
             		<nav>
             			<ul>
             			<li><a href="#">BLOG</a></li>
@@ -114,7 +114,6 @@ function createTemplate2(data){
             		</nav>	
             		<br/><br/><br/>
             		<div id="container">
-            		<img src="/ui/cooltext70.png" id="cooltxt"/>
             			<p id="date"> ${date}</p>
             			<h1>${heading}</h1><hr/>
             			${content}
