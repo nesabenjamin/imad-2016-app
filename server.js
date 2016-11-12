@@ -114,6 +114,7 @@ function createTemplate2(data){
             		</nav>	
             		<br/><br/><br/>
             		<div id="container">
+            		<img src="/ui/cooltext70.png" id="cooltxt"/>
             			<p id="date"> ${date}</p>
             			<h1>${heading}</h1><hr/>
             			${content}
