@@ -94,7 +94,7 @@ function createTemplate2(data){
             </head>
             <body>
             	<div id="wrapper">
-            		<header></header><img src="/ui/cooltext70.png" id="cooltxt"/>
+            		<header><img src="/ui/cooltext70.png" id="cooltxt"/></header>
             		<nav>
             			<ul>
             			<li><a href="#">BLOG</a></li>
