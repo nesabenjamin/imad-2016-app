@@ -19,6 +19,9 @@ body{
 	border-radius: 5px;
 	float: left;
 }
+header{
+    float: left;
+}
 #container{   
     clear:both;
     background-color: rgba(235, 240, 250,0.9);
