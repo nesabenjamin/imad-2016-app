@@ -77,6 +77,7 @@ nav{
 		color:blue;
 	}
 	li:hover ul{
+	    background:white;
 		display: block;
 		position: absolute;
 		margin-left: -40px;        		
