@@ -86,8 +86,8 @@ function signUP(){
                     <input type="text" id="usernamer" size="17" required="required"/>
                     </div>
                     <div>
-                        <label for="Passwordr">Password</label>
-                        <input type="password" maxlength="10" id="Passwordr" size="17" required="required"/>
+                        <label for="passwordr">Password</label>
+                        <input type="password" maxlength="10" id="passwordr" size="17" required="required"/>
                     </div> 
                     <div>
                             <label for="dob">DOB</label>
