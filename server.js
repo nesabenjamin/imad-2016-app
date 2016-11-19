@@ -163,6 +163,18 @@ app.post('/login', function (req, res) {
    });
 });
 
+app.get('/get-comments/:articleId', function (req, res) {
+  pool.query('SELECT * FROM comments WHERE article_id= $1',[req.params.articleId], function(err, result){
+      if(err){
+        res.status(500).send(err.toString());
+      } else {
+        res.send(JSON.stringify(result.rows));
+      }
+  });
+});
+
+
+
 app.get('/check-login', function (req, res) {
    if (req.session && req.session.auth && req.session.auth.userId) {
        // Load the user object
