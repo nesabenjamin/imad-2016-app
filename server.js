@@ -3,6 +3,8 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
 var crypto = require('crypto');
+var bodyParser = require('body-parser');
+var session = require('express-session');
 var config = {
 	user:'nesabenjamin',
 	database:'nesabenjamin',
@@ -13,7 +15,21 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
+app.use(bodyParser.json());
+app.use(session({
+    secret: 'someRandomSecretValue',
+    cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
+}));
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'loginindex.html'));
+});
+
+var counter=0;
+app.get('/counter', function (req, res) {
+	counter++;
+  res.send(counter.toString());
+});
 
 function createTemplate(data){
 	var title = data.title;
@@ -66,15 +82,7 @@ function createTemplate(data){
 	return htmlTemplate;
 }
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'loginindex.html'));
-});
 
-var counter=0;
-app.get('/counter', function (req, res) {
-	counter++;
-  res.send(counter.toString());
-});
 
 function hash(input,salt){
   var hashed = crypto.pbkdf2Sync(input,salt,1000,512,'sha512');
@@ -116,6 +124,7 @@ app.get('/:articleName', function (req, res) {
   var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
 });
+
 var names = [];
 app.get('/submit_name/:name', function (req, res) {
   var name = req.params.name;
@@ -123,10 +132,10 @@ app.get('/submit_name/:name', function (req, res) {
   res.send(JSON.stringify(names));
 });
 
+
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
-
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
