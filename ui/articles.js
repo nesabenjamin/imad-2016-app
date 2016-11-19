@@ -44,7 +44,7 @@ function show_comments(){
     request.send(null);
 }
 
-    function show_comments1(){
+    function add_comments(){
         alert("---------");
     	//alert(document.getElementById("name").value);
     	var request = new XMLHttpRequest();
