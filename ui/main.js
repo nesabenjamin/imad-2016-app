@@ -62,7 +62,7 @@ function logIN (){
                     <input type="password" id="pword" size="15" required="required"/>
                 </div>                
                 <div><br/>
-                <button onclick="logingin()" id="logbut" class="but">Login</button>
+                <button onclick="loggingin()" id="logbut" class="but">Login</button>
 	    	    </div> </center>`;  
 	    	
 	var div3 = document.getElementById("div3");
@@ -117,7 +117,7 @@ function signup (){
     //alert("Registered");
     }
 
- function loggingin(){
+ function loggingin()(){
     alert("-------");
         var request = new XMLHttpRequest();
         
