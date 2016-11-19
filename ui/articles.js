@@ -34,8 +34,8 @@ function show_comments(){
                         <input type="text" id="username" size="15" />
                     </div>
                     <div>
-                        <label for="txtarea">comment</label>
-                        <textarea name="message" rows="5" cols="30"></textarea>
+                        <label for="message">comment</label>
+                        <textarea name="message" id="message" rows="5" cols="30"></textarea>
                     </div>                
                     <div><br/>
                     <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/>
@@ -46,7 +46,7 @@ function show_comments(){
 }
 
 function add_comments(){
-   alert("Registering");
+   alert("comment entry");
     var request = new XMLHttpRequest();
         request.onreadystatechange = function(){
             if(request.readyState === XMLHttpRequest.DONE){
@@ -59,14 +59,14 @@ function add_comments(){
                 }
             }
         };
-        var username = document.getElementById("usernamer").value;
-        var password = document.getElementById("passwordr").value;
+        var username = document.getElementById("username").value;
+        var comment = document.getElementById("message").value;
         console.log(username);
-        console.log(password);
+        console.log(comment);
 
-        request.open('POST','http://nesabenjamin.imad.hasura-app.io/create-user',true);
+        request.open('POST','http://nesabenjamin.imad.hasura-app.io/submit_comment',true);
         request.setRequestHeader('Content-type','application/json');
-        request.send(JSON.stringify({username:username,password:password}));
+        request.send(JSON.stringify({username:username,comment:comment}));
     
 }
     
