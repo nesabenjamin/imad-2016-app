@@ -58,8 +58,8 @@ function logIN (){
                     <input type="text" id="username" size="15" required="required"/>
                 </div>
                 <div>
-                    <label for="pword">Password</label>
-                    <input type="password" id="pword" size="15" required="required"/>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" size="15" required="required"/>
                 </div>                
                 <div><br/>
                 <button onclick="loggingin()" id="logbut" class="but">Login</button>
