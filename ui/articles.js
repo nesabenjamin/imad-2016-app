@@ -28,8 +28,7 @@ function show_comments(){
             }
         }
     };
-    var template = `<center>
-                     <div><br/>
+    var template = `<div><br/>
                         <label for="username">User name</label>
                         <input type="text" id="username" size="15" />
                     </div>
@@ -39,7 +38,7 @@ function show_comments(){
                     </div>                
                     <div><br/>
                     <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/>
-                    </div> </center>`;
+                    </div>`;
     document.getElementById("div3").innerHTML=template;
     request.open('GET', '/get-comments/' + currentArticleTitle, true);
     request.send(null);
