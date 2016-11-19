@@ -104,11 +104,11 @@ app.get('/articles/:articleId', function (req, res) {
   		}
 	});
 });  
-  
+/*  
 app.get('/:articleName', function (req, res) {
   var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
-});
+});*/
 
 var names = [];
 app.get('/submit_name/:name', function (req, res) {
