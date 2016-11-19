@@ -163,8 +163,8 @@ app.get('/test-db', function (req, res) {
   });
 });
 
-app.get('/articles/:articleName', function (req, res) {
-	pool.query("SELECT * FROM articles WHERE id = '"+req.params.articleName +"'", function(err, result){
+app.get('/articles/:articleId', function (req, res) {
+	pool.query('SELECT * FROM articles WHERE id = $1', [req.params.articleId], function(err, result){
 		if(err){
   			res.status(500).send(err.toString());
   		} else {
