@@ -15,10 +15,8 @@ function show_comments(){
         if (request.readyState === XMLHttpRequest.DONE) {
                 if (request.status === 200) {
                     
-                var template =`<a href="http://127.0.0.1:8080/login#"><button class="but left" id="logIN">Log <span class="bold" id="slogIN">IN</span></button></a>`;
-                document.getElementById("div2").innerHTML=template;
                 var commentsData = JSON.parse(this.responseText);
-                //alert(commentsData[0].comment);
+                alert(commentsData[0].comment);
                 for (var i=0; i< commentsData.length; i++) {                    
                     document.getElementById('div3').innerHTML +=  `<hr/>
                     <p class="right">${commentsData[i].username}</p>
@@ -59,4 +57,5 @@ function show_comments(){
         request.open('GET','http://127.0.0.1:8080/submit_name?name='+name,true);
         request.send(null);
     }
-    
+    //var template =`<a href="http://127.0.0.1:8080/login#"><button class="but left" id="logIN">Log <span class="bold" id="slogIN">IN</span></button></a>`;
+                //document.getElementById("div2").innerHTML=template;
