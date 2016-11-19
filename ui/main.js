@@ -117,7 +117,7 @@ function signup (){
     //alert("Registered");
     }
 
- function loggingin()(){
+ function loggingin(){
     alert("-------");
         var request = new XMLHttpRequest();
         
