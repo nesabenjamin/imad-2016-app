@@ -19,7 +19,7 @@ function show_comments(){
                     //alert(commentsData[0].comments);
                     for (var i=0; i< commentsData.length; i++) {                    
                         document.getElementById('div2').innerHTML +=  `
-                        <p class="right">${commentsData[i].username}</p>
+                        <p class="right red">${commentsData[i].username}</p>
                         <p>${commentsData[i].comments}</p>
                         <hr/>`;
                     }                
