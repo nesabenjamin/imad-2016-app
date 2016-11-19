@@ -7,11 +7,56 @@
                  <p class= "center">         
                     <input type="button" onclick="show_comments()" value="Post as a guest" class= "but2"/></p>`;}
 
-            function show_comments(){
-                alert("---------");
-                var name = document.getElementById("name");
-                var p1 = document.getElementById("p1");
-                    p1.innerHTML ="<hr/>" +name.value;
-                var p2 = document.getElementById("p2");
-                    p2.innerHTML = document.getElementById("txtarea").value;
+function show_comments(){
+    var currentArticleTitle = window.location.pathname.split('/')[2];
+    alert(currentArticleTitle);
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+                if (request.status === 200) {
+                    
+                var template =`<a href="http://127.0.0.1:8080/login#"><button class="but left" id="logIN">Log <span class="bold" id="slogIN">IN</span></button></a>`;
+                document.getElementById("div2").innerHTML=template;
+                var commentsData = JSON.parse(this.responseText);
+                //alert(commentsData[0].comment);
+                for (var i=0; i< commentsData.length; i++) {                    
+                    document.getElementById('div3').innerHTML +=  `<hr/>
+                    <p class="right">${commentsData[i].username}</p>
+                    <p>${commentsData[i].comment}</p>
+                    `;
+                }                
+            } else {
+                comments.innerHTML('Oops! Could not load comments!');
             }
+        }
+    };
+    request.open('GET', '/get-comments/' + currentArticleTitle, true);
+    request.send(null);
+}
+
+    function show_comments1(){
+        alert("---------");
+    	//alert(document.getElementById("name").value);
+    	var request = new XMLHttpRequest();
+    	request.onreadystatechange = function(){
+    		if(request.readyState === XMLHttpRequest.DONE){
+    			if(request.status === 200){
+    				var names  = request.responseText;
+    				names = JSON.parse(names);
+    				var list = '';
+    				for (var i=0; i<names.length; i++){
+
+    					list+= '<p>'+names[i]+'</p>';
+    				}
+    				var p = document.getElementById("p2");
+            			p.innerHTML = list;
+    			}
+    		}
+    	};
+
+        var nameInput = document.getElementById("name");
+        var name = nameInput.value;
+        request.open('GET','http://127.0.0.1:8080/submit_name?name='+name,true);
+        request.send(null);
+    }
+    
