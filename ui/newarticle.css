@@ -10,7 +10,7 @@ body{
 	margin: 0 auto;
 	width: 800px;
 	height: 100%;
-	
+	overflow:hidden;
 	background: linear-gradient(to bottom right, #fff,#d6e0f5);
 	color: #193366;
 	/*box-shadow: 2px 2px 2px #d6e0f5;
