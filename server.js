@@ -135,18 +135,6 @@ function createTemplate2(data){
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'loginindex.html'));
 });
-app.get('/newindex.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'newindex.html'));
-});
-app.get('/ui/newindexstyle.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'newindexstyle.css'));
-});
-app.get('/newarticle.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'newarticle2.html'));
-});
-app.get('/ui/newarticle.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'newarticle.css'));
-});
 
 var counter=0;
 app.get('/counter', function (req, res) {
