@@ -14,74 +14,8 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {	
-	 'article_one' : {
-		title:'Article ONE| 1 Nesa benjamin',
-		heading: 'Article One',
-		date : '29.10.2016',
-		content:`<p>Article - ONEArticle - ONEArticle - ONEArticle - ONEArticle - ONEArticle - ONE
-	            Article - ONEArticle - ONEArticle - ONE</p>
-	            <p>Article - ONEArticle - ONEArticle - ONEArticle - ONEArticle - ONEArticle - ONE
-	            Article - ONEArticle - ONEArticle - ONE</p>
-	            <p>Article - ONEArticle - ONEArticle - ONEArticle - ONEArticle - ONEArticle - ONE
-	            Article - ONEArticle - ONEArticle - ONE</p>`
-	},
-	'article_two' : {
-		title:'Article TWO| 2 Nesa benjamin',
-		heading: 'Article Two',
-		date : '30.10.2016',
-		content:`<p>Article - 22222222222222222222222222222222222</p>`
-	},
-	'article_three' : {
-		title:'Article THREE| 3 Nesa benjamin',
-		heading: 'Article Three',
-		date : '31.10.2016',
-		content:`<p>Article - 333333333333333333333333333333333333</p>`
-	}
-};
 
 function createTemplate(data){
-	var title = data.title;
-	var date = data.date;
-	var heading = data.heading;
-	var content = data.content;
-	var htmlTemplate = `<!doctype html>
-						<html>
-						    <head><title>${title}</title>
-						        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-						        <link href="/ui/articles.css" rel="stylesheet" />
-						    </head>
-						    <body >
-						    	<div id="cooltxt">
-									<img id="madi" src="/ui/cooltext70.png" />
-						    	</div><br/>
-						    	<header><nav><ul>
-						    		<li> <a href="#"> HOME</a></li>
-						    		<li> <a href="#"> BLOG</a></li>
-						    		<li> <a href="#"> ARTICLES</a></li>
-						    		<li> <a href="#"> CONTACT</a></li>
-						    	</ul></nav></header>						    	
-						        <br/><br/>
-						        <div class = "container">
-						            <h1>${heading}</h1>
-						            <p>${date}</p>
-						            ${content}
-						            <br/><br/>
-						            <input type="button" onclick="submit()" value="COMMENTS" class= "but">
-						            <br/><br/>
-						            <div id="comment_box">	          
-						            </div>
-						            <div id="comment">
-						            <p id="p1" class="right"></p>
-						            <p id="p2"></p>
-						            </div>
-						        </div>
-						        <script type="text/javascript" src="/ui/main.js"></script>
-						    </body>
-						</html>`;
-	return htmlTemplate;
-}
-function createTemplate2(data){
 	var title = data.title;
 	var date = data.date;
 	var heading = data.heading;
@@ -172,7 +106,7 @@ app.get('/articles/:articleId', function (req, res) {
   				res.status(404).send('Article not found');
   			} else {
   				var articleData = result.rows[0];
-  				res.send(createTemplate2(articleData));
+  				res.send(createTemplate(articleData));
   			}  			
   		}
 	});
