@@ -38,47 +38,43 @@ function createTemplate(data){
 	var content = data.content;
 	var htmlTemplate = `
             <!doctype html>
-            <html><head>
-            	<title> ${title} </title>
-            	<link rel="stylesheet" type="text/css" href="/ui/newarticle.css">
-            </head>
-            <body>
-            	<div id="wrapper">
-            		<header><img src="/ui/cooltext70.png" id="cooltxt"/></header>
-            		<nav>
-            			<ul>
-            			<li><a href="#">BLOG</a></li>
-            			<li><a href="#">ARTICLES</a>
-            				<ul>
-            					<li><a href="http://nesabenjamin.imad.hasura-app.io/articles/1"> APIs </a></li>
-            					<li><a href="http://nesabenjamin.imad.hasura-app.io/articles/2"> NODE.JS vs PHP </a></li>
-            					<li><a href="http://nesabenjamin.imad.hasura-app.io/articles/3"> History of PROGRAMMING LANGUAGES </a></li>
-            				</ul></li>
-            			<li><a href="#">CONTACT</a>
-            				<ul>
-            						<li><a href="#"> Office </a></li>
-            						<li><a href="#"> Resident </a></li>
-            				</ul></li>
-            			<li><a href="http://nesabenjamin.imad.hasura-app.io/">HOME</a></li>
-            			</ul>			
-            		</nav>	
-            		
-            		<div id="container">
-            			<p id="date"> ${date} </p>
-            			<h1> ${heading} </h1><hr/>
-            			${content}
-            			<br/>
-            			<button onclick="submit()" class="but">COMMENTS</button>
-            			<div id="comment_box"></div>
-            			<p id="p0"><hr/></p>
-            			<p id="p1">Nov 6, 2016</p>
-            			<p id="p2">nice job</p>
-            			<p id="p3">user nesh</p>
-            		</div>
-            	</div>
-            <script type="text/javascript" src="/ui/articles.js"></script>
-            </body>
-            </html>`;
+        <html>
+        <head>
+          <title> ${title}</title>
+          <link rel="stylesheet" type="text/css" href="/ui/newarticle.css">
+        </head>
+        <body>
+          <div id="wrapper">
+            <img src="/ui/cooltext70.png" id="cooltxt"/><br/><br/><br/>
+            <nav>     
+              <ul>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">ARTICLES</a>
+                <ul>
+                  <li><a href="#"> APIs </a></li>
+                  <li><a href="#"> NODE.JS vs PHP </a></li>
+                  <li><a href="http://nesabenjamin.imad.hasura-app.io/newarticle.html"> History of PROGRAMMING LANGUAGES </a></li>
+                </ul></li>
+              <li><a href="#">CONTACT</a>
+                <ul>
+                    <li><a href="#"> Office </a></li>
+                    <li><a href="#"> Resident </a></li>
+                </ul></li>
+              <li><a href="#">HOME</a></li>
+              </ul>
+            </nav>    
+            <div id="container"><br/>
+                <p id="date" class=" tright"> ${date}</p>
+                <h1>${heading}</h1><hr/>
+                ${content}              
+            </div>
+            <input type="button" onclick="show_comments()" value="COMMENTS" class= "commentbut"><br/><br/>
+            <div id="div2"> </div>
+            <div id="div3"> </div>
+          </div><br/><br/>
+          <script type="text/javascript" src="/ui/articles.js"></script>
+        </body>
+        </html>`;
 	return htmlTemplate;
 }
 
