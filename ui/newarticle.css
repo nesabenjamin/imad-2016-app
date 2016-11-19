@@ -1,40 +1,37 @@
 body{
 	background-image: url("/ui/articleblur.png");
-	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
 	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	margin-top: 5px;
 }
-
 #wrapper{
-	border: 0;
 	margin: 0 auto;
-	width: 850px;
-    height: 100%;
-    position: relative;	
+	width: 800px;
+	height: 100%;
+	
+	background: linear-gradient(to bottom right, #fff,#d6e0f5);
+	color: #193366;
+	/*box-shadow: 2px 2px 2px #d6e0f5;
+	border: 1px solid #d6e0f5;
+	background-color:rgba(234, 239, 250,0.9);*/
+	border-radius: 1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#container{
+	clear: both;
+	padding-left:25px;
+	padding-right:25px; 	
+	border-top: 1px solid #193366;
+	margin-top: 0px;
 }
 #cooltxt{
-	height: 75px;
-	width: 40%;
-	border-radius: 2px;
-
-    margin-bottom:1px;
+	height: 100px;
+	width: 435px;
+	float:left;
+	margin: 0;
 }
-
-#container{   
-    background-color: rgba(235, 240, 250,0.9);
-	/*background: linear-gradient(to bottom right, #fff,#ebf0fa);*/
-    border: 1px solid #193366;
-    color: #142952;
-	margin: 0 auto;
-	width: 740px;
-    height: 100%;
-    padding: 50px;
-    padding-top:10px;
-    border-radius: 5px;
-
-}
-
 nav{
 	float: right;
 }
@@ -51,19 +48,19 @@ nav{
 		padding:5px 10px;
 		margin: 1px;
 		margin-right: 0px;
-		background-color:#1f3d7a;
+		margin-bottom: 0px;
+		background-color: #193366;
 		color: white;
-		text-decoration: none;
+		text-decoration: none;		
 	}
 	ul li a:hover{
-		background:#7094db;
+		background:#99b3e6;
 		color:blue;
 	}
 	li:hover ul{
 		display: block;
 		position: absolute;
-		margin-left: -40px; 
-		margin-bottom: 0px;
+		margin-left: -40px;        		
 	}
 	li:hover li{
 		width: 100%;
@@ -74,70 +71,70 @@ nav{
 		color:white;
 	}
 	li:hover li a:hover{
-		background:#7094db;
+		background:#99b3e6;
 	}
-.but{
-    background-color: #193366; 
-    border: none;
-    border-radius:3px;
-    color: white;
-    padding: 5px 200px 5px 200px ;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    width: 100%;
-}
-.but2{
-    background-color: #193366; 
-    border: none;
-    border-radius:0px;
-    color: white;
-    padding: 5px 5px 5px 5px ;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-}
 strong{
-    color:red;
+	color:red;
 }
-#date{
-    text-align:right;
-    font-style: italic;
+.tright{
+	text-align:right; 
 }
-#div3{
+.but{	
+	width: auto;
+	margin-right: 10px;
+	background-color:#142952;
+	color: white;
+    padding: 5px 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+   }
+
+.commentbut{	
+	width: 95%;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color:#142952;
+	color: white;
+    padding: 10px 275px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+   }
+#div2{
 	width:375px;
-	float: right;
+	float:center;
+	padding-left: 80px;
 }
-#div3 div{
+#div2 div{
 	float:left;
 	width: 375px;
 	padding:5px;
 }
 
-#div3 label{
+#div2 label{
 	float:left;
 	width: 100px;
 }
-#div3 textarea, input{
-	width: 250px;
+#div2 textarea, input:text{
+	width: 150px;
+	border-radius:3px;
+    border:  1px solid #7094db;
 }
-#div3 input:focus, textarea:focus{
-	background-color:#ebf0fa;
-}
-input, textarea{
+input,textarea{
     background-color :#ebf0fa;
 	border: 1px solid #adc2eb;
+	border-radius:2px;
 	}
+#div2 input:focus, textarea:focus{
+	background-color:#ebf0fa;
 
-#p1{
-	text-align: right;
- 		color: red;
 }
-#p3{
-	font-style: italic;
-}
-#p0,#p1,#p2{
-	clear: both;
+
+#div3{
+clear:both;
 }
