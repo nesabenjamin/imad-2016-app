@@ -82,12 +82,12 @@ function signUP(){
                     <input type="text" id="name" size="17" required="required"/>
                     </div>
                     <div>
-                    <label for="username">User Name</label>
-                    <input type="text" id="username" size="17" required="required"/>
+                    <label for="usernamer">User Name</label>
+                    <input type="text" id="usernamer" size="17" required="required"/>
                     </div>
                     <div>
-                        <label for="pword">Password</label>
-                        <input type="password" maxlength="6" id="pword" size="17" required="required"/>
+                        <label for="Passwordr">Password</label>
+                        <input type="password" maxlength="6" id="Passwordr" size="17" required="required"/>
                     </div> 
                     <div>
                             <label for="dob">DOB</label>
