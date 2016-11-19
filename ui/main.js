@@ -52,7 +52,7 @@ console.log('Loaded!');
 
 function logIN (){
         //alert("innn");
-	var template =`	<form><center>
+	var template =`<center>
                 <div><br/>
                     <label for="username">User name</label>
                     <input type="text" id="username" size="15" required="required"/>
@@ -62,8 +62,8 @@ function logIN (){
                     <input type="password" id="pword" size="15" required="required"/>
                 </div>                
                 <div><br/>
-                <button onclick="login()" id="logbut" class="but">Login</button>
-	    	    </div> </center></form>`;  
+                <button onclick="logingin()" id="logbut" class="but">Login</button>
+	    	    </div> </center>`;  
 	    	
 	var div3 = document.getElementById("div3");
 			div3.innerHTML = template;
@@ -76,7 +76,7 @@ function logIN (){
 
 function signUP(){
     document.getElementById("log").style.visibility = "hidden";
- 	var template =`	<form><center>
+ 	var template =`	
                     <div><br/>
                     <label for="name">Name</label>
                     <input type="text" id="name" size="17" required="required"/>
@@ -108,12 +108,72 @@ function signUP(){
                             <input type="email" id="email" size="17" required="required"/>
                     </div>
                     <div><br/>
-                        <button onclick="signup()" id="signbut" class="but">Register</button>
-        	    	</div></center>
-                    </form> `;
+                        <button onclick="register()" id="signbut" class="but">Register</button>
+        	    	</div> `;
 	var div3 = document.getElementById("div3");
 	div3.innerHTML = template; 
 }
 function signup (){
     //alert("Registered");
     }
+
+ function loggingin(){
+    //alert("-------");
+        var request = new XMLHttpRequest();
+        
+        request.onreadystatechange = function () {
+          if (request.readyState === XMLHttpRequest.DONE) {
+              // Take some action
+              if (request.status === 200) {
+                    alert(request.responseText);
+                  alert('Sucess!');
+              } else if (request.status === 403) {
+                alert(request.responseText);
+                  alert('Invalid credentials. Try again?');
+              } else if (request.status === 500) {
+                alert(request.responseText);
+                  alert('500 - Something went wrong on the server');
+                  //alert('Login');
+              } else {
+                alert(request.responseText);
+                  alert('error - -- -- -- Something went wrong on the server');
+                 //alert('Login');
+              }
+          }  
+          // Not done yet
+        };
+        // Make the request
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        console.log(username);
+        console.log(password);
+        request.open('POST', 'http://127.0.0.1:8080/login', true);
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send(JSON.stringify({username: username, password: password}));  
+        
+ }
+
+function register(){
+    //alert("Registered");
+    var request = new XMLHttpRequest();
+        request.onreadystatechange = function(){
+            if(request.readyState === XMLHttpRequest.DONE){
+                if(request.status === 200){
+                    alert(request.responseText);
+                    //alert('user created successfully');
+                }else{
+                    alert(request.responseText);
+                    //alert('could not register the user');
+                }
+            }
+        };
+        var username = document.getElementById("usernamer").value;
+        var password = document.getElementById("passwordr").value;
+        console.log(username);
+        console.log(password);
+
+        request.open('POST','/create-user',true);
+        request.setRequestHeader('Content-type','application/json');
+        request.send(JSON.stringify({username:username,password:password}));
+        //document.getElementById("signbut").value="Registering...";
+}
