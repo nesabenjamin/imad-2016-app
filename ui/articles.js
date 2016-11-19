@@ -38,7 +38,7 @@ function show_comments(){
                     </div>                
                     <div><br/>
                     <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/>
-                    </div>`;
+                    </div><br/><br/>`;
     document.getElementById("div3").innerHTML=template;
     request.open('GET', '/get-comments/' + currentArticleTitle, true);
     request.send(null);
