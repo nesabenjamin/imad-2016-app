@@ -16,11 +16,11 @@ function show_comments(){
                 if (request.status === 200) {
                     
                 var commentsData = JSON.parse(this.responseText);
-                alert(commentsData[0].comment);
+                alert(commentsData[0].comments);
                 for (var i=0; i< commentsData.length; i++) {                    
                     document.getElementById('div3').innerHTML +=  `<hr/>
                     <p class="right">${commentsData[i].username}</p>
-                    <p>${commentsData[i].comment}</p>
+                    <p>${commentsData[i].comments}</p>
                     `;
                 }                
             } else {
