@@ -105,22 +105,22 @@ strong{
     display: inline-block;
     font-size: 25px;
    }
-#div2{
+#div3{
 	width:375px;
 	float:center;
 	padding-left: 80px;
 }
-#div2 div{
+#div3 div{
 	float:left;
 	width: 375px;
 	padding:5px;
 }
 
-#div2 label{
+#div3 label{
 	float:left;
 	width: 100px;
 }
-#div2 textarea, input:text{
+#div3 textarea, input:text{
 	width: 150px;
 	border-radius:3px;
     border:  1px solid #7094db;
@@ -130,7 +130,7 @@ input,textarea{
 	border: 1px solid #adc2eb;
 	border-radius:2px;
 	}
-#div2 input:focus, textarea:focus{
+#div3 input:focus, textarea:focus{
 	background-color:#ebf0fa;
 
 }
