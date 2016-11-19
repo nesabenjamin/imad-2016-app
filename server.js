@@ -200,33 +200,11 @@ app.get('/submit_name/:name', function (req, res) {
   names.push(name);
   res.send(JSON.stringify(names));
 });
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+
+app.get('/ui/:fileName', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
-app.get('/ui/articles.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'articles.js'));
-});
-app.get('/ui/articles.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'articles.css'));
-});
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
-app.get('/ui/nesh.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'nesh.jpg'));
-});
-app.get('/ui/cooltext70.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'cooltext70.png'));
-});
-app.get('/ui/mainbgblur.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'mainbgblur.png'));
-});
-app.get('/ui/articleblur.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'articleblur.png'));
-});
+
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
