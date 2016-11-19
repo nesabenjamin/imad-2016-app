@@ -73,10 +73,10 @@ nav{
 	li:hover li a:hover{
 		background:#99b3e6;
 	}
-strong{
+strong .red{
 	color:red;
 }
-.tright{
+.right{
 	text-align:right; 
 }
 .but{	
