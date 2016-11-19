@@ -9,16 +9,16 @@
 
 function show_comments(){
     var currentArticleTitle = window.location.pathname.split('/')[2];
-    alert(currentArticleTitle);
+    //alert(currentArticleTitle);
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
                 if (request.status === 200) {
-                   alert(this.responseText);
+                   //alert(this.responseText);
                     var commentsData = JSON.parse(this.responseText);
-                    alert(commentsData[0].comments);
+                    //alert(commentsData[0].comments);
                     for (var i=0; i< commentsData.length; i++) {                    
-                        document.getElementById('div3').innerHTML +=  `<hr/>
+                        document.getElementById('div2').innerHTML +=  `<hr/>
                         <p class="right">${commentsData[i].username}</p>
                         <p>${commentsData[i].comments}</p>
                         `;
@@ -28,6 +28,19 @@ function show_comments(){
             }
         }
     };
+    var template = `<center>
+                     <div><br/>
+                        <label for="username">User name</label>
+                        <input type="text" id="username" size="15" />
+                    </div>
+                    <div>
+                        <label for="txtarea">comment</label>
+                        <textarea name="message" rows="5" cols="30"></textarea>
+                    </div>                
+                    <div><br/>
+                    <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/>
+                    </div> </center>`;
+    document.getElementById("div3").innerHTML=template;
     request.open('GET', '/get-comments/' + currentArticleTitle, true);
     request.send(null);
 }
