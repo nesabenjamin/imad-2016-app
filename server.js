@@ -60,7 +60,7 @@ function createTemplate(data){
                     <li><a href="#"> Office </a></li>
                     <li><a href="#"> Resident </a></li>
                 </ul></li>
-              <li><a href="#">HOME</a></li>
+              <li><a href="http://nesabenjamin.imad.hasura-app.io">HOME</a></li>
               </ul>
             </nav>    
             <div id="container"><br/>
