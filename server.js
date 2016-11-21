@@ -22,7 +22,7 @@ app.use(session({
 }));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'loginindex.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 var counter=0;
@@ -53,7 +53,7 @@ function createTemplate(data){
                 <ul>
                   <li><a href="#"> APIs </a></li>
                   <li><a href="#"> NODE.JS vs PHP </a></li>
-                  <li><a href="http://nesabenjamin.imad.hasura-app.io/newarticle.html"> History of PROGRAMMING LANGUAGES </a></li>
+                  <li><a href="http://nesabenjamin.imad.hasura-app.io"> History of PROGRAMMING LANGUAGES </a></li>
                 </ul></li>
               <li><a href="#">CONTACT</a>
                 <ul>
