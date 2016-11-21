@@ -51,9 +51,9 @@ function createTemplate(data){
               <li><a href="#">BLOG</a></li>
               <li><a href="#">ARTICLES</a>
                 <ul>
-                  <li><a href="#"> APIs </a></li>
-                  <li><a href="#"> NODE.JS vs PHP </a></li>
-                  <li><a href="http://nesabenjamin.imad.hasura-app.io"> History of PROGRAMMING LANGUAGES </a></li>
+                  <li><a href="http://nesabenjamin.imad.hasura-app.io/articles/1"> APIs </a></li>
+                  <li><a href="http://nesabenjamin.imad.hasura-app.io/articles/2"> NODE.JS vs PHP </a></li>
+                  <li><a href="http://nesabenjamin.imad.hasura-app.io/articles/3"> History of PROGRAMMING LANGUAGES </a></li>
                 </ul></li>
               <li><a href="#">CONTACT</a>
                 <ul>
