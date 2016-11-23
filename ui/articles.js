@@ -53,7 +53,7 @@ function add_comments(){
             if(request.readyState === XMLHttpRequest.DONE){
                 if(request.status === 200){
                     alert(request.responseText);
-                    //alert('user created successfully');
+                    //alert('comments added successfully');
                     show_comments();
                 }else{
                     alert(request.responseText);
