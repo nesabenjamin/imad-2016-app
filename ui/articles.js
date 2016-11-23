@@ -1,3 +1,5 @@
+console.log('Loaded!');
+
 function submit(){
                 //alert(".value");
                 var box = document.getElementById("comment_box");
