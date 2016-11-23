@@ -18,6 +18,7 @@ function show_comments(){
                    //alert(this.responseText);
                     var commentsData = JSON.parse(this.responseText);
                     //alert(commentsData[0].comments);
+                     document.getElementById('div2').innerHTML=``;
                     for (var i=0; i< commentsData.length; i++) {                    
                         document.getElementById('div2').innerHTML +=  `
                         <p class="right red">${commentsData[i].username}</p>
