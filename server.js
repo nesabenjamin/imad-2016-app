@@ -194,8 +194,8 @@ app.post('/submit-comment/:articleId', function (req, res) {
                     var articleId = result.rows[0].id;
                     // Now insert the right comment for this article
                     pool.query(
-                        "INSERT INTO comments ( username, comments, article_id) VALUES ($1, $2, $3)",
-                        [ req.session.auth.userName, req.body.comment, articleId],
+                        "INSERT INTO comments ( username, comments, article_id,time) VALUES ($1, $2, $3, $4)",
+                        [ req.session.auth.userName, req.body.comment, articleId,'now()'],
                         function (err, result) {
                             if (err) {
                                 res.status(500).send(err.toString());
