@@ -54,6 +54,7 @@ function add_comments(){
                 if(request.status === 200){
                     alert(request.responseText);
                     //alert('user created successfully');
+                    show_comments();
                 }else{
                     alert(request.responseText);
                     //alert('could not register the user');
