@@ -82,6 +82,12 @@ strong{
 .right{
 	text-align:right; 
 }
+.fleft{
+	float:left; 
+}
+.fright{
+	float:right; 
+}
 .but{	
 	width: auto;
 	margin-right: 10px;
