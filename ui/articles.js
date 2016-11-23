@@ -57,7 +57,7 @@ function add_comments(){
         request.onreadystatechange = function(){
             if(request.readyState === XMLHttpRequest.DONE){
                 if(request.status === 200){
-                    show_comments()
+                    show_comments();
                     //alert(request.responseText);
                     //alert('user created successfully');
                 }else{
@@ -95,7 +95,7 @@ close.onclick = function() {
     modal.style.display = "none";
     var myModalWindow = document.getElementById('myModalWindow');
     myModalWindow.style.display = "none";
-}
+};
 
  function loggingin(){
     //alert("-------");
