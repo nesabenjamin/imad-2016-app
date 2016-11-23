@@ -66,7 +66,14 @@ function createTemplate(data){
             <div id="container"><br/>
                 <p id="date" class=" tright"> ${date}</p>
                 <h1>${heading}</h1><hr/>
-                ${content}              
+            <div id="article_link">
+            <h2>Articles</h2>
+              <p><a href="http://127.0.0.1:8080/articles/1"> APIs </a></p>
+              <p><a href="http://127.0.0.1:8080/articles/2"> NODE.JS </a></p>
+              <p><a href="http://127.0.0.1:8080/articles/3"> History in goding languages  </a></p>
+              <p> More..</p>
+            </div>
+            <div id="content">${content}</div>               
             </div>
             <input type="button" onclick="show_comments()" value="COMMENTS" class= "commentbut"><br/><br/>
             <div id="div2"> </div>
