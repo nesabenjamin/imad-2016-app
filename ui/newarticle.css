@@ -254,3 +254,9 @@ input,textarea{
     font-size: 12px;
     box-shadow: 1px 1px 1px #99b3ff;
 }
+#slogIN{
+    color:green;
+}
+#ssignUP{
+    color: red;
+}
