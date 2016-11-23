@@ -75,7 +75,7 @@ function logIN (){
 
 
 function signUP(){
-    document.getElementById("log").style.visibility = "hidden";
+    //document.getElementById("log").style.visibility = "hidden";
  	var template =`	
                     <div><br/>
                     <label for="name">Name</label>
