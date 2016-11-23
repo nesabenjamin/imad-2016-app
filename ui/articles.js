@@ -32,10 +32,10 @@ function show_comments(){
             }
         }
     };
-    var template = `<div><br/>
+    var template = `<!--<div><br/>
                         <label for="username">User name</label>
                         <input type="text" id="username" size="15" />
-                    </div>
+                    </div>-->
                     <div>
                         <label for="message">comment</label>
                         <textarea name="message" id="message" rows="5" cols="30"></textarea>
