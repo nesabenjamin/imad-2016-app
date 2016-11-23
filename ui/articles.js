@@ -44,6 +44,7 @@ function show_comments(){
                     <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/>
                     </div><br/><br/>`;
     document.getElementById("div3").innerHTML=template;
+    
     request.open('GET', '/get-comments/' + currentArticleTitle, true);
     request.send(null);
 }
@@ -68,7 +69,7 @@ function add_comments(){
         console.log(username);
         console.log(comment);
 
-        request.open('POST','http://nesabenjamin.imad.hasura-app.io/submit_comment',true);
+        request.open('POST','http://nesabenjamin.imad.hasura-app.io/submit-comment',true);
         request.setRequestHeader('Content-type','application/json');
         request.send(JSON.stringify({username:username,comment:comment}));
     
