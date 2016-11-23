@@ -50,31 +50,32 @@ function show_comments(){
 }
 
 function add_comments(){
-   alert("comment entry");
+   //alert("comment entry");
+   var currentArticleTitle = window.location.pathname.split('/')[2];
     var request = new XMLHttpRequest();
         request.onreadystatechange = function(){
             if(request.readyState === XMLHttpRequest.DONE){
                 if(request.status === 200){
-                    alert(request.responseText);
-                    //alert('comments added successfully');
-                    show_comments();
+                    show_comments()
+                    //alert(request.responseText);
+                    //alert('user created successfully');
                 }else{
                     alert(request.responseText);
-                    //alert('could not register the user');
+                    //alert('only login user');
                 }
             }
         };
-        var username = document.getElementById("username").value;
+        //var username = document.getElementById("username").value;
         var comment = document.getElementById("message").value;
-        console.log(username);
+        //console.log(username);
         console.log(comment);
 
-        request.open('POST','http://nesabenjamin.imad.hasura-app.io/submit-comment',true);
+        request.open('POST','/submit-comment/'+currentArticleTitle,true);
         request.setRequestHeader('Content-type','application/json');
-        request.send(JSON.stringify({username:username,comment:comment}));
+        request.send(JSON.stringify({comment:comment}));
     
 }
-    
+
     
     
     
