@@ -36,7 +36,7 @@ function createTemplate(data){
 	var date = data.date;
 	var heading = data.heading;
 	var content = data.content;
-	var htmlTemplate = `
+var htmlTemplate = `
             <!doctype html>
         <html>
         <head>
@@ -78,6 +78,57 @@ function createTemplate(data){
             <input type="button" onclick="show_comments()" value="COMMENTS" class= "commentbut"><br/><br/>
             <div id="div2"> </div>
             <div id="div3"> </div>
+            <div id="div4">
+
+                <div id="myModalWindow">
+                <div id="myModal">
+                <p id="xp"><button id="x">x</button></p><hr/>            
+
+                    <button onclick="logIN()" class="butm fleft" id="logIN">Log <span class="bold" id="slogIN">IN</span>
+                    </button>            
+                    <button onclick="signUP()" class="butm fright" id="signUP">Sign <span class="bold" id="ssignUP">UP</span></button><br/>
+                <div id="div01" class="divmodal">
+                    <div><br/><br/>
+                        <label for="username">User name</label>
+                        <input type="text" id="username" size="15" required="required"/>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" size="15" required="required"/>
+                    </div>                
+                    <div><br/>
+                    <button onclick="loggingin()" id="logbut" class="but fright">Login</button>
+                    </div>
+                </div>
+                <div id="div02" class="divmodal">
+                        <div><br/><br/>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" size="15" required="required"/>
+                        </div>
+                        <div>
+                        <label for="usernamer">User Name</label>
+                        <input type="text" id="usernamer" size="15" required="required"/>
+                        </div>
+                        <div>
+                            <label for="passwordr">Password</label>
+                            <input type="password" maxlength="10" id="passwordr" size="15" required="required"/>
+                        </div> 
+                         <div>
+                                <label for="gender">Gender</label>
+                                <input type="radio" name="gender" id="gender" value="male" checked> M
+                                <input type="radio" name="gender" id="gender" value="female"> F
+                        </div>
+                        <div>
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" size="15" required="required"/>
+                        </div>
+                        <div><br/>
+                            <button onclick="register()" id="signbut" class="but fright">Register</button>
+                        </div> 
+                </div>
+              </div>
+              </div>
+ </div>
           </div><br/><br/><br/><br/>
           <script type="text/javascript" src="/ui/articles.js"></script>
         </body>
