@@ -68,9 +68,9 @@ function createTemplate(data){
                 <h1>${heading}</h1><hr/>
             <div id="article_link">
             <h2>Articles</h2>
-              <p><a href="http://127.0.0.1:8080/articles/1"> APIs </a></p>
-              <p><a href="http://127.0.0.1:8080/articles/2"> NODE.JS </a></p>
-              <p><a href="http://127.0.0.1:8080/articles/3"> History in goding languages  </a></p>
+              <p><a href="http://nesabenjamin.imad.hasura-app.io/articles/1"> APIs </a></p>
+              <p><a href="http://nesabenjamin.imad.hasura-app.io/articles/2"> NODE.JS </a></p>
+              <p><a href="http://nesabenjamin.imad.hasura-app.io/articles/3"> History in goding languages  </a></p>
               <p> More..</p>
             </div>
             <div id="content">${content}</div>               
