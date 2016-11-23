@@ -141,3 +141,22 @@ input,textarea{
 #div3{
 clear:both;
 }
+#article_link{
+	border: 1px solid white;
+	float:right;
+	margin: 0 0 15px 15px;
+	padding: 30px;
+	padding-top: 5px;
+	width: 130px
+
+}
+#article_link a{
+	text-decoration:none;
+}
+#content{
+	width: 700px;
+	padding-right: 25px;
+}
+#content p{
+	text-align:justify;
+}
