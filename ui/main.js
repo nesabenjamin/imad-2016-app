@@ -118,7 +118,7 @@ function signup (){
     }
 
  function loggingin(){
-    alert("-------");
+    //alert("-------");
         var request = new XMLHttpRequest();
         
         request.onreadystatechange = function () {
