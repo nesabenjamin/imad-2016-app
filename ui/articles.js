@@ -33,16 +33,16 @@ function show_comments(){
         }
     };
     var template = `<!--<div><br/>
-                        <label for="username">User name</label>
-                        <input type="text" id="username" size="15" />
-                    </div>-->
-                    <div>
-                        <label for="message">comment</label>
-                        <textarea name="message" id="message" rows="5" cols="30"></textarea>
-                    </div>                
-                    <div><br/>
-                    <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/>
-                    </div><br/><br/>`;
+            <label for="username">User name</label>
+            <input type="text" id="username" size="15" />
+            </div>-->
+            <div>
+            <label for="message">comment</label>
+            <textarea name="message" id="message" rows="5" cols="30"></textarea>
+            </div>                
+            <div><br/>
+            <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/>
+            </div><br/><br/>`;
     document.getElementById("div3").innerHTML=template;
     
     request.open('GET', '/get-comments/' + currentArticleTitle, true);
