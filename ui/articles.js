@@ -116,18 +116,18 @@ function closex() {
               // Take some action
               if (request.status === 200) {
                     //alert(request.responseText);
-                  alert('Sucess!');
+                  alert('logged in Sucessfully!');
                   closex();
               } else if (request.status === 403) {
                 //alert(request.responseText);
-                  alert('Invalid credentials. Try again?');
+                  alert('Invalid credentials. Try again.');
               } else if (request.status === 500) {
                 alert(request.responseText);
                   alert('500 - Something went wrong on the server');
                   //alert('Login');
               } else {
                 alert(request.responseText);
-                  alert('error - -- -- -- Something went wrong on the server');
+                  alert('error - -- Something went wrong on the server');
                  //alert('Login');
               }
           }  
