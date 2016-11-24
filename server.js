@@ -74,7 +74,7 @@ var htmlTemplate = `
               <p class="oblique"><a href="http://nesabenjamin.imad.hasura-app.io/articles/3"> History in Coding Languages  </a></p>
               <p class="oblique"> More..</p>
             </div>
-            <div id="content"><br/><br/>${content}</div>               
+            <div id="content"><br/><br/><br/><br/>${content}</div>               
             </div>
             <input type="button" onclick="show_comments()" value="COMMENTS" class= "commentbut"><br/><br/>
             <div id="div2"> </div>
