@@ -57,12 +57,13 @@ function add_comments(){
         request.onreadystatechange = function(){
             if(request.readyState === XMLHttpRequest.DONE){
                 if(request.status === 200){
+                    //alert('comment inserted successfully');
                     show_comments();
                     //alert(request.responseText);
-                    //alert('user created successfully');
+                    
                 }else{
                     alert(request.responseText);
-                    //alert('only login user');
+                    //alert('only login user can comment');
                 }
             }
         };
