@@ -36,7 +36,7 @@ function createTemplate(data){
 	var date = data.date;
 	var heading = data.heading;
 	var content = data.content;
-	var currentArticleTitle = window.location.pathname;
+	//var currentArticleTitle = window.location.pathname;
 var htmlTemplate = `
             <!doctype html>
         <html>
@@ -65,7 +65,7 @@ var htmlTemplate = `
               </ul>
             </nav>    
             <div id="container"><br/>
-            <p class=" tright"> <a href=" ${currentArticleTitle}">Login </a> <a href="#">logout </a> </p>
+            <p class=" tright"> <a href="">Login </a> <a href="#">logout </a> </p>
                 <p id="author" class=" tright italics"> Posted by Nesa benjamin</p>
                 <p id="date" class=" tright italics"> ${date.toDateString()}</p>
                 <h1>${heading}</h1><hr/>
