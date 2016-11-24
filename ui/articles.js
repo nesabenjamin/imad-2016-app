@@ -70,7 +70,7 @@ function add_comments(){
         //var username = document.getElementById("username").value;
         var comment = document.getElementById("message").value;
         //console.log(username);
-        console.log(comment);
+        //console.log(comment);
 
         request.open('POST','/submit-comment/'+currentArticleTitle,true);
         request.setRequestHeader('Content-type','application/json');
@@ -137,8 +137,8 @@ function closex() {
         // Make the request
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
-        console.log(username);
-        console.log(password);
+        //console.log(username);
+        //console.log(password);
         request.open('POST', 'http://nesabenjamin.imad.hasura-app.io/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
@@ -161,8 +161,8 @@ function register(){
         };
         var username = document.getElementById("usernamer").value;
         var password = document.getElementById("passwordr").value;
-        console.log(username);
-        console.log(password);
+        //console.log(username);
+        //console.log(password);
 
         request.open('POST','http://nesabenjamin.imad.hasura-app.io/create-user',true);
         request.setRequestHeader('Content-type','application/json');
@@ -170,7 +170,4 @@ function register(){
         //document.getElementById("signbut").value="Registering...";
 }
     
-    
-    
-    //var template =`<a href="http://127.0.0.1:8080/login#"><button class="but left" id="logIN">Log <span class="bold" id="slogIN">IN</span></button></a>`;
-                //document.getElementById("div2").innerHTML=template;
+   
