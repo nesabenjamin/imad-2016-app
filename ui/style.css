@@ -9,13 +9,13 @@ body{
 }
 
 #wrapper{    
-    background: linear-gradient(to bottom right, rgba(255, 255, 255,0.9),rgba(31, 61, 122,0.8));
 	margin: 0 auto;
 	margin-top: 15px;
 	margin-bottom: 0;
 	padding-bottom: 0;
 	width: 800px;
 	height: 100%;
+	background: linear-gradient(to bottom right, rgba(255, 255, 255,0.9),rgba(31, 61, 122,0.8));
 	overflow: auto;
 	color: #142952;
 	border: 1px solid #050a14;
