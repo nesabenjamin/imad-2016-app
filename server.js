@@ -65,7 +65,7 @@ var htmlTemplate = `
               </ul>
             </nav>    
             <div id="container"><br/>
-            <p class=" tright"> <a href="">Login </a> <a href="#">logout </a> </p>
+            <p class=" tright"> <a href="">Login </a>&nbsp; <a href="#">logout </a> </p>
                 <p id="author" class=" tright italics"> Posted by Nesa benjamin</p>
                 <p id="date" class=" tright italics"> ${date.toDateString()}</p>
                 <h1>${heading}</h1><hr/>
