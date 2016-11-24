@@ -108,6 +108,13 @@ function closex() {
     var myModalWindow = document.getElementById('myModalWindow');
     myModalWindow.style.display = "none";
 }
+function openx() {
+    //alert('');
+    var myModal = document.getElementById('myModal');
+    myModal.style.display = "block";
+    var myModalWindow = document.getElementById('myModalWindow');
+    myModalWindow.style.display = "block";
+}
 
 
 
