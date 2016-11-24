@@ -36,9 +36,9 @@ function show_comments(){
             <label for="username">User name</label>
             <input type="text" id="username" size="15" />
             </div>-->
-            <div>
+            <div><br/><br/>
             <label for="message">Comment on Article</label>
-            <textarea name="message" id="message" rows="5" cols="30"></textarea>
+            <textarea name="message" id="message" rows="5" cols="50"></textarea>
             </div>                
             <div><br/>
             <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/><br/><br/>
