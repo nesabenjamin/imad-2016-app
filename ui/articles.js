@@ -115,10 +115,11 @@ function closex() {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                    alert(request.responseText);
+                    //alert(request.responseText);
                   alert('Sucess!');
+                  closex();
               } else if (request.status === 403) {
-                alert(request.responseText);
+                //alert(request.responseText);
                   alert('Invalid credentials. Try again?');
               } else if (request.status === 500) {
                 alert(request.responseText);
@@ -149,11 +150,11 @@ function register(){
         request.onreadystatechange = function(){
             if(request.readyState === XMLHttpRequest.DONE){
                 if(request.status === 200){
-                    alert(request.responseText);
-                    //alert('user created successfully');
+                    //alert(request.responseText);
+                    alert('user created successfully');
                 }else{
-                    alert(request.responseText);
-                    //alert('could not register the user');
+                    //alert(request.responseText);
+                    alert('could not register the user');
                 }
             }
         };
