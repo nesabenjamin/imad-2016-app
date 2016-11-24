@@ -64,16 +64,17 @@ var htmlTemplate = `
               </ul>
             </nav>    
             <div id="container"><br/>
-                <p id="date" class=" tright"> ${date}</p>
+                <p id="author" class=" tright italics"> Posted by Nesa benjamin</p>
+                <p id="date" class=" tright italics"> ${date.toDateString()}</p>
                 <h1>${heading}</h1><hr/>
             <div id="article_link">
-            <h2>Articles</h2>
-              <p><a href="http://nesabenjamin.imad.hasura-app.io/articles/1"> APIs </a></p>
-              <p><a href="http://nesabenjamin.imad.hasura-app.io/articles/2"> NODE.JS </a></p>
-              <p><a href="http://nesabenjamin.imad.hasura-app.io/articles/3"> History in goding languages  </a></p>
-              <p> More..</p>
+            <h2 class="oblique">Articles</h2>
+              <p class="oblique"><a href="http://nesabenjamin.imad.hasura-app.io/articles/1"> APIs </a></p>
+              <p class="oblique"><a href="http://nesabenjamin.imad.hasura-app.io/articles/2"> NodeJS </a></p>
+              <p class="oblique"><a href="http://nesabenjamin.imad.hasura-app.io/articles/3"> History in Coding Languages  </a></p>
+              <p class="oblique"> More..</p>
             </div>
-            <div id="content">${content}</div>               
+            <div id="content"><br/><br/>${content}</div>               
             </div>
             <input type="button" onclick="show_comments()" value="COMMENTS" class= "commentbut"><br/><br/>
             <div id="div2"> </div>
