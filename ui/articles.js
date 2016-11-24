@@ -25,7 +25,7 @@ function show_comments(){
                         document.getElementById('div2').innerHTML +=  `
                         <p class="tright red italics">${commentsData[i].username}</p>
                         <p class="tright italics">${commentsData[i].comments}</p>
-                        <hr/>`;
+                        <hr/><br/>`;
                     }                
                 } else {
                     comments.innerHTML('Oops! Could not load comments!');
@@ -41,8 +41,8 @@ function show_comments(){
             <textarea name="message" id="message" rows="5" cols="30"></textarea>
             </div>                
             <div><br/>
-            <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/>
-            </div><br/><br/>`;
+            <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/><br/><br/>
+            </div>`;
     document.getElementById("div3").innerHTML=template;
     
     request.open('GET', '/get-comments/' + currentArticleTitle, true);
