@@ -156,8 +156,12 @@ input,textarea{
 }
 
 #div3{
-clear:both;
+    clear:both;
 }
+#div2{
+    padding:25px;
+}
+
 #article_link{
 	border: 0px solid white;
 	float:right;
