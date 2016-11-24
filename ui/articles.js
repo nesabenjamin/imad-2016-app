@@ -22,13 +22,13 @@ function show_comments(){
                     //alert(commentsData[0].comments);
                     
                      document.getElementById('div2').innerHTML=``;
-                    for (var i=0; i< commentsData.length; i++) {                    
-                        document.getElementById('div2').innerHTML +=  `
+                    for (var i=0; i< commentsData.length; i++) {
                         var time = commentsData[i].time;
-                        <p class="tright italics">${time.toTimeString()}</p>
-                        <p class="tright red italics">${commentsData[i].username}</p>
-                        <p class="tright italics">${commentsData[i].comments}</p>
-                        <hr/><br/>`;
+                        document.getElementById('div2').innerHTML +=  `
+                            <p class="tright italics">${time.toTimeString()}</p>
+                            <p class="tright red italics">${commentsData[i].username}</p>
+                            <p class="tright italics">${commentsData[i].comments}</p>
+                            <hr/><br/>`;
                     }                
                 } else {
                     comments.innerHTML('Oops! Could not load comments!');
