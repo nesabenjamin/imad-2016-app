@@ -97,6 +97,16 @@ close.onclick = function() {
     myModalWindow.style.display = "none";
 };
 
+function closex() {
+    //alert('');
+    var myModal = document.getElementById('myModal');
+    myModal.style.display = "none";
+    var myModalWindow = document.getElementById('myModalWindow');
+    myModalWindow.style.display = "none";
+}
+
+
+
  function loggingin(){
     //alert("-------");
         var request = new XMLHttpRequest();
