@@ -154,7 +154,7 @@ input,textarea{
 clear:both;
 }
 #article_link{
-	border: 1px solid white;
+	border: 0px solid white;
 	float:right;
 	margin: 0 0 15px 15px;
 	padding-left: 30px;
