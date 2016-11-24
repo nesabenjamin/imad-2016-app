@@ -92,14 +92,14 @@ function signUP(){
     document.getElementById("div02").style.display = "block";
 }
 
-var close = document.getElementById("x");
-close.onclick = function() {
+//var close = document.getElementById("x");
+//close.onclick = function() {
     //alert('');
-    var modal = document.getElementById('myModal');
-    modal.style.display = "none";
-    var myModalWindow = document.getElementById('myModalWindow');
-    myModalWindow.style.display = "none";
-};
+//    var modal = document.getElementById('myModal');
+//    modal.style.display = "none";
+//    var myModalWindow = document.getElementById('myModalWindow');
+//    myModalWindow.style.display = "none";
+//};
 
 function closex() {
     //alert('');
