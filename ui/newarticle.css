@@ -79,7 +79,7 @@ strong{
 .red{
     color:red;
 }
-.right{
+.tright{
 	text-align:right; 
 }
 .fleft{
@@ -87,6 +87,12 @@ strong{
 }
 .fright{
 	float:right; 
+}
+.italics{
+	font-style: italic;
+}
+.oblique{
+	font-style: oblique;
 }
 .but{	
 	width: auto;
@@ -151,7 +157,8 @@ clear:both;
 	border: 1px solid white;
 	float:right;
 	margin: 0 0 15px 15px;
-	padding: 30px;
+	padding-left: 30px;
+	padding-right: 10px;
 	padding-top: 5px;
 	width: 130px
 
