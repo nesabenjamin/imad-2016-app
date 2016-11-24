@@ -23,8 +23,8 @@ function show_comments(){
                      document.getElementById('div2').innerHTML=``;
                     for (var i=0; i< commentsData.length; i++) {                    
                         document.getElementById('div2').innerHTML +=  `
-                        <p class="right red italics">${commentsData[i].username}</p>
-                        <p class="italics">${commentsData[i].comments}</p>
+                        <p class="tright red italics">${commentsData[i].username}</p>
+                        <p class="tright italics">${commentsData[i].comments}</p>
                         <hr/>`;
                     }                
                 } else {
