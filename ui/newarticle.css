@@ -94,6 +94,11 @@ strong{
 .oblique{
 	font-style: oblique;
 }
+.firstp:first-letter{
+	font-size: 200%;
+	float: left;
+	line-height: 1;
+}
 .but{	
 	width: auto;
 	margin-right: 10px;
