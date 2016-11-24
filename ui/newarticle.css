@@ -211,7 +211,7 @@ input,textarea{
     padding-top: 3px;
     border: 1px solid #888;     
     overflow: auto;/* Could be more or less, depending on screen size */
-    box-shadow: 2px 2px 2px #666;
+    box-shadow: 2px 2px 2px #0a1429;
     
 }
 
