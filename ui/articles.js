@@ -77,29 +77,30 @@ function add_comments(){
     
 }
 
+
 function logIN(){
     document.getElementById("div01").style.display = "block";
     document.getElementById("div02").style.display = "none";
+    
 }
 function signUP(){
     document.getElementById("div01").style.display = "none";
     document.getElementById("div02").style.display = "block";
 }
 
-var x = document.getElementById("x");
-x.onclick = closex();
-
-function closex() {
+var close = document.getElementById("x");
+close.onclick = function() {
     //alert('');
-    var myModal = document.getElementById('myModal');
-    myModal.style.display = "none";
+    var modal = document.getElementById('myModal');
+    modal.style.display = "none";
     var myModalWindow = document.getElementById('myModalWindow');
     myModalWindow.style.display = "none";
-}
+};
 
  function loggingin(){
     //alert("-------");
         var request = new XMLHttpRequest();
+        
         request.onreadystatechange = function () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
