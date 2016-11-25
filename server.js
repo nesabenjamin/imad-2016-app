@@ -193,7 +193,7 @@ app.post('/create-user', function (req, res) {
     var username = req.body.username;
     var password = req.body.password;
     var name = req.body.name;
-    var dob = req.body.dob;
+    //var dob = req.body.dob;
     var sex = req.body.sex;
     var email = req.body.email;
    /*
