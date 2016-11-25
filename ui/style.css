@@ -12,7 +12,6 @@ body{
     width: 800px;
 	height: 100%;
 	margin: 0 auto;
-	margin-bottom: 0;
 	padding-bottom: 0;
 	background: linear-gradient(to bottom right, rgba(255, 255, 255,0.9),rgba(31, 61, 122,0.8));
 	overflow: auto;
