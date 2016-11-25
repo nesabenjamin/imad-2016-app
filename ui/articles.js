@@ -157,8 +157,45 @@ function openx() {
         request.send(JSON.stringify({username: username, password: password}));  
         
  }
-
 function register(){
+    //alert("discourse Database accepting null values!");
+    var request = new XMLHttpRequest();
+        request.onreadystatechange = function(){
+            if(request.readyState === XMLHttpRequest.DONE){
+                if(request.status === 200){
+                    alert(request.responseText);
+                    //alert('user created successfully');
+                }else{
+                    alert(request.responseText);
+                    //alert('could not register the user');
+                }
+            }
+        };
+        var username = document.getElementById("usernamer").value;
+        var password = document.getElementById("passwordr").value;
+        var name = document.getElementById("name").value;
+        var dob = document.getElementById("dob").value;
+        var sex = document.getElementById("gender").value;
+        var email = document.getElementById("email").value;
+        
+        if (username.trim()===''||password.trim()===''||email.trim()==='') {
+            alert("Invalid credentials entered");
+        }
+        console.log(username);
+        console.log(password);
+        console.log(name);
+        console.log(dob);
+        console.log(sex);
+        console.log(email);
+
+        request.open('POST','http://nesabenjamin.imad.hasura-app.io/create-user',true);
+        request.setRequestHeader('Content-type','application/json');
+        request.send(JSON.stringify({username:username,password:password,name:name,dob:dob,sex:sex,email:email}));
+        //document.getElementById("signbut").value="Registering...";
+}
+
+
+function register1(){
     alert("Registering");
     var request = new XMLHttpRequest();
         request.onreadystatechange = function(){
