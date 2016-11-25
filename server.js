@@ -196,13 +196,13 @@ app.post('/create-user', function (req, res) {
     var sex = req.body.sex;
     var email = req.body.email;
    
-   pool.query('INSERT INTO "user1" (name, username, dob, sex, email) VALUES ($1, $2, $3, $4, $5)', [name, username, dob, sex, email], function (err, result) {
+ /*  pool.query('INSERT INTO "user1" (name, username, dob, sex, email) VALUES ($1, $2, $3, $4, $5)', [name, username, dob, sex, email], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
           res.send('User successfully created: ' + username);
       }
-   });
+   });*/
    
    var salt = crypto.randomBytes(128).toString('hex');
    var dbString = hash(password, salt);
