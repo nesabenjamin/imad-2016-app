@@ -40,7 +40,7 @@ function show_comments(){
             <input type="text" id="username" size="15" />
             </div>-->
             <div><br/><br/>
-            <label for="message">Comment on Article</label>
+            <label for="message">Leave Comment</label>
             <textarea name="message" id="message" rows="5" cols="50"></textarea>
             </div>                
             <div><br/>
