@@ -162,8 +162,6 @@ function register(){
                 }
             }
         };
-        
-        
         var username = document.getElementById("usernamer").value;
         var password = document.getElementById("passwordr").value;
         var name = document.getElementById("name").value;
@@ -174,7 +172,6 @@ function register(){
         if (username.trim()===''||password.trim()===''||email.trim()==='') {
             alert("Invalid credentials entered");
         }
-        
         console.log(username);
         console.log(password);
         console.log(name);
