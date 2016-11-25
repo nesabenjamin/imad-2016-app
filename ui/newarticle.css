@@ -98,6 +98,9 @@ strong{
 .oblique{
 	font-style: oblique;
 }
+.borderbottom{
+    border-bottom: 2px solid #142952;
+}
 .firstp:first-letter{
 	font-size: 200%;
 	float: left;
