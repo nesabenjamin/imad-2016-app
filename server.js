@@ -119,7 +119,7 @@ var htmlTemplate = `
                         </div> 
                     <div>
                             <label for="dob">DOB</label>
-                            <input type="date" id="dob" required="required"/>
+                            <input type="date" id="dob" size="15" required="required"/>
                     </div>
                          <div>
                                 <label for="gender">Gender</label>
