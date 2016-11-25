@@ -13,6 +13,8 @@ function submit(){
 function show_comments(){
     var currentArticleTitle = window.location.pathname.split('/')[2];
     //alert(currentArticleTitle);
+    var template_loader=`<div class="loader"></div>`;
+    document.getElementById('div2').innerHTML=template_loader;
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
