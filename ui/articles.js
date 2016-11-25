@@ -26,6 +26,7 @@ function show_comments(){
                      document.getElementById('div2').innerHTML=``;
                     for (var i=0; i< commentsData.length; i++) {
                         var time = commentsData[i].time;
+                        time = time.toTimeString();
                         document.getElementById('div2').innerHTML +=  `
                             <p class="tright italics">${time}</p>
                             <p class="tright red italics">${commentsData[i].username}</p>
