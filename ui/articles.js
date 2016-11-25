@@ -33,7 +33,7 @@ function show_comments(){
                             <hr/><br/>`;
                     }                
                 } else {
-                    comments.innerHTML('Oops! Could not load comments!');
+                   document.getElementById('div2').innerHTML('Oops! Could not load comments!');
             }
         }
     };
