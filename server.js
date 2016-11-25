@@ -193,7 +193,7 @@ app.post('/create-user', function (req, res) {
     var password = req.body.password;
     var name = req.body.name;
     var dob = req.body.dob;
-    var sex = req.body.gender;
+    var sex = req.body.sex;
     var email = req.body.email;
    
    pool.query('INSERT INTO "user1" (name, username, dob, sex, email) VALUES ($1, $2, $3, $4, $5)', [name, username, dob, sex, email], function (err, result) {
@@ -214,6 +214,8 @@ app.post('/create-user', function (req, res) {
       }
    });
 });
+
+
 app.post('/login', function (req, res) {
    var username = req.body.username;
    var password = req.body.password;
