@@ -149,7 +149,7 @@ function signup (){
  }
 
 function register(){
-    alert("discourse Database accepting null values!");
+    //alert("discourse Database accepting null values!");
     var request = new XMLHttpRequest();
         request.onreadystatechange = function(){
             if(request.readyState === XMLHttpRequest.DONE){
