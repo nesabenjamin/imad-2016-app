@@ -165,7 +165,7 @@ function register(){
         var username = document.getElementById("usernamer").value;
         var password = document.getElementById("passwordr").value;
         var name = document.getElementById("name").value;
-        var dob = document.getElementById("dob").value;
+        //var dob = document.getElementById("dob").value;
         var sex = document.getElementById("gender").value;
         var email = document.getElementById("email").value;
         
@@ -175,12 +175,12 @@ function register(){
         console.log(username);
         console.log(password);
         console.log(name);
-        console.log(dob);
+        //console.log(dob);
         console.log(sex);
         console.log(email);
 
         request.open('POST','http://nesabenjamin.imad.hasura-app.io/create-user',true);
         request.setRequestHeader('Content-type','application/json');
-        request.send(JSON.stringify({username:username,password:password,name:name,dob:dob,sex:sex,email:email}));
+        request.send(JSON.stringify({username:username,password:password,name:name,sex:sex,email:email}));
         //document.getElementById("signbut").value="Registering...";
 }
