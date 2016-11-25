@@ -29,7 +29,7 @@ function show_comments(){
                         document.getElementById('div2').innerHTML +=  `
                             <p class="tright italics">${time}</p>
                             <p class="tright red italics">${commentsData[i].username}</p>
-                            <p class="tright italics borderbottom">${commentsData[i].comment}</p>
+                            <p class="tright italics">${commentsData[i].comment}</p>
                             <hr/><br/>`;
                     }                
                 } else {
