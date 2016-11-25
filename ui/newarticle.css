@@ -279,10 +279,10 @@ input,textarea{
 }
 .loader {
     border: 7px solid #f3f3f3; /* Light grey */
-    border-top: 7px solid #3498db; /* Blue */
+    border-top: 7px solid #193366; /* Blue */
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     animation: spin 2s linear infinite;
 }
 
