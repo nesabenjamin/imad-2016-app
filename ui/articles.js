@@ -185,7 +185,7 @@ loginlink.onclick = function(){
     var currentArticleTitle = window.location.pathname;
     window.location = currentArticleTitle;
     return false;
-} 
+}; 
 
 
 var logoutlink = document.getElementById("logoutlink");
