@@ -25,10 +25,10 @@ function show_comments(){
                     
                      document.getElementById('div2').innerHTML=``;
                     for (var i=0; i< commentsData.length; i++) {
-                        var time = commentsData[i].time;
-                        time = time.toTimeString();
+                        var date = commentsData[i].date;
+                        date = date.toDateString();
                         document.getElementById('div2').innerHTML +=  `
-                            <p class="tright italics">${time}</p>
+                            <p class="tright italics">${date}</p>
                             <p class="tright red italics">${commentsData[i].username}</p>
                             <p class="tright italics">${commentsData[i].comment}</p>
                             <hr/><br/>`;
