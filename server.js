@@ -64,7 +64,7 @@ var htmlTemplate = `
               <li><a href="http://nesabenjamin.imad.hasura-app.io">HOME</a></li>
               </ul>
             </nav>    
-            <div id="container"><br/>
+            <div id="container">
             <p class=" tright"> <a href="/" id="loginlink">Login </a>&nbsp; 
                                 <a href="/logout" id="logoutlink">logout </a> </p>
                 <p id="author" class=" tright italics"> Posted by Nesa benjamin</p>
