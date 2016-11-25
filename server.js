@@ -117,10 +117,7 @@ var htmlTemplate = `
                             <label for="passwordr">Password</label>
                             <input type="password" maxlength="10" id="passwordr" size="15" required="required"/>
                         </div> 
-                    <div>
-                            <label for="dob">DOB</label>
-                            <input type="date" id="dob" size="15" required="required"/>
-                    </div>
+
                          <div>
                                 <label for="gender">Gender</label>
                                 <input type="radio" name="gender" id="gender" value="male" checked> M
