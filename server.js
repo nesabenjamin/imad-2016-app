@@ -226,7 +226,7 @@ app.post('/login', function (req, res) {
 });
 
 app.get('/get-comments/:articleId', function (req, res) {
-  pool.query('SELECT * FROM comments WHERE article_id= $1',[req.params.articleId], function(err, result){
+  pool.query('SELECT * FROM comment WHERE article_id= $1',[req.params.articleId], function(err, result){
       if(err){
         res.status(500).send(err.toString());
       } else {
@@ -249,7 +249,7 @@ app.post('/submit-comment/:articleId', function (req, res) {
                     var articleId = result.rows[0].id;
                     // Now insert the right comment for this article
                     pool.query(
-                        "INSERT INTO comments ( username, comments, article_id,time) VALUES ($1, $2, $3, $4)",
+                        "INSERT INTO comment ( username, comments, article_id,time) VALUES ($1, $2, $3, $4)",
                         [ req.session.auth.userName, req.body.comment, articleId,'now()'],
                         function (err, result) {
                             if (err) {
