@@ -82,6 +82,9 @@ strong{
 .tright{
 	text-align:right; 
 }
+.tcenter{
+    text-align:center;
+}
 .fleft{
 	float:left; 
 }
