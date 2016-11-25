@@ -179,5 +179,31 @@ function register(){
         request.send(JSON.stringify({username:username,password:password}));
         //document.getElementById("signbut").value="Registering...";
 }
-    
+
+var loginlink = document.getElementById("loginlink");
+loginlink.onclick = function(){
+    var currentArticleTitle = window.location.pathname;
+    window.location = currentArticleTitle;
+    return false;
+} 
+
+
+var logoutlink = document.getElementById("logoutlink");
+logoutlink.onclick = function(){
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
+               alert(this.responseText);
+                        
+            } else {
+                //alert();
+            }
+        }
+    };    
+    request.open('GET', '/logout', true);
+    request.send(null);   
+    return false;
+};
+
    
