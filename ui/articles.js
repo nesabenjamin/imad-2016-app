@@ -56,7 +56,7 @@ function show_comments(){
 
 function add_comments(){
    //alert("comment entry");
-   //var currentArticleTitle = window.location.pathname.split('/')[2];
+   var currentArticleTitle = window.location.pathname.split('/')[2];
    //alert(currentArticleTitle);
     var request = new XMLHttpRequest();
         request.onreadystatechange = function(){
