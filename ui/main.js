@@ -76,7 +76,7 @@ function logIN (){
 
 function signUP(){
     //document.getElementById("log").style.visibility = "hidden";
- 	var template =`	
+ 	var template =`	<center>
                     <div><br/>
                     <label for="name">Name</label>
                     <input type="text" id="name" size="17" required="required"/>
@@ -104,7 +104,7 @@ function signUP(){
                     </div>
                     <div><br/>
                         <button onclick="register()" id="signbut" class="but">Register</button>
-        	    	</div> `;
+        	    	</div></center> `;
 	var div3 = document.getElementById("div3");
 	div3.innerHTML = template; 
 }
@@ -162,13 +162,28 @@ function register(){
                 }
             }
         };
+        
+        
         var username = document.getElementById("usernamer").value;
         var password = document.getElementById("passwordr").value;
+        var name = document.getElementById("name").value;
+        var dob = document.getElementById("dob").value;
+        var sex = document.getElementById("gender").value;
+        var email = document.getElementById("email").value;
+        
+        if (username.trim()===''||password.trim()===''||email.trim()==='') {
+            alert("Invalid credentials entered");
+        }
+        
         console.log(username);
         console.log(password);
+        console.log(name);
+        console.log(dob);
+        console.log(sex);
+        console.log(email);
 
         request.open('POST','http://nesabenjamin.imad.hasura-app.io/create-user',true);
         request.setRequestHeader('Content-type','application/json');
-        request.send(JSON.stringify({username:username,password:password}));
+        request.send(JSON.stringify({username:username,password:password,name:name,dob:dob,sex:sex,email:email}));
         //document.getElementById("signbut").value="Registering...";
 }
