@@ -213,7 +213,8 @@ input,textarea{
     margin-right: 50px;
     padding: 10px;
     padding-top: 3px;
-    border: 1px solid #888;     
+    border: 1px solid #142952;
+    border-bottom: 3px solid #142952;
     overflow: auto;/* Could be more or less, depending on screen size */
     box-shadow: 2px 2px 2px #0a1429;
     
