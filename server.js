@@ -189,8 +189,13 @@ app.get('/hash/:input', function(req, res) {
 });
 
 app.post('/create-user', function (req, res) {
-   var username = req.body.username;
-   var password = req.body.password;
+    var username = req.body.username;
+    var password = req.body.password;
+    var name = req.body.name;
+    var dob = req.body.dob;
+    var sex = req.body.gender;
+    var email = req.body.email;
+   
    var salt = crypto.randomBytes(128).toString('hex');
    var dbString = hash(password, salt);
    pool.query('INSERT INTO "hash" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
