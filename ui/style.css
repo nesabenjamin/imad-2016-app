@@ -115,17 +115,14 @@ nav{
 }
 #div3 textarea, input:text{
 	width: 150px;
-	border-radius:3px;
     border:  1px solid #7094db;
 }
 input{
     background-color :#ebf0fa;
 	border: 2px solid #adc2eb;
-	border-radius:2px;
 	}
 #div3 input:focus, textarea:focus{
 	background-color:#ebf0fa;
-
 }
 
 #slogIN{
