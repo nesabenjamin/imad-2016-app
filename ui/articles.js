@@ -165,6 +165,7 @@ function register(){
                 if(request.status === 200){
                     alert(request.responseText);
                     //alert('user created successfully');
+                    logIN();
                 }else{
                     alert(request.responseText);
                     //alert('could not register the user');
@@ -204,6 +205,7 @@ function register1(){
                 if(request.status === 200){
                     //alert(request.responseText);
                     alert('user created successfully');
+                    logIN();
                 }else{
                     //alert(request.responseText);
                     alert('could not register the user');
