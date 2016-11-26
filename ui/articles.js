@@ -43,11 +43,11 @@ function show_comments(){
             <input type="text" id="username" size="15" />
             </div>-->
             <div><br/><br/>
-            <label for="message">Leave Comment</label>
+            <label for="message">leave Comment</label>
             <textarea name="message" id="message" rows="5" cols="50"></textarea>
             </div>                
             <div><br/>
-            <input type="submit" onclick="add_comments()" value="Post as loginuser" id="" class= "but"/><br/><br/>
+            <input type="submit" onclick="add_comments()" value="Post a Comment" id="" class= "but"/><br/><br/>
             </div>`;
     document.getElementById("div3").innerHTML=template;
     
