@@ -214,4 +214,50 @@ logoutlink.onclick = function(){
     return false;
 };
 
+
+function checklogin(){
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
+               alert(this.responseText);
+                var result = JSON.parse(this.responseText);
+                if (result.rows.length === 0) {
+                    //res.status(400).send('Not logged in');
+                   //return false;
+                }else{
+                    //var username = result.rows[0].username;
+                    //alert(username+" Logged in");
+                    //return true;
+                    closex();
+                }
+            } else {
+                //alert();
+                return false;
+            }
+        }
+    };    
+    request.open('GET', '/check-login', true);
+    request.send(null);   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
