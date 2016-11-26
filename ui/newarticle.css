@@ -13,9 +13,6 @@ body{
 	overflow:auto;
 	background: linear-gradient(to bottom right, #fff,#d6e0f5);
 	color: #193366;
-	/*box-shadow: 2px 2px 2px #d6e0f5;
-	border: 1px solid #d6e0f5;
-	background-color:rgba(234, 239, 250,0.9);*/
 	border-radius: 1px;
 	border-bottom: 3px solid #142952;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
