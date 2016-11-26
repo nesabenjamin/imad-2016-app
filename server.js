@@ -289,11 +289,13 @@ app.get('/check-login', function (req, res) {
            if (err) {
               res.status(500).send(err.toString());
            } else {
-              res.send(result.rows[0].id.toString());    
+              //res.send(result.rows[0].id.toString());
+              res.send(JSON.stringify(result.rows));
            }
        });
    } else {
-       res.status(400).send('You are not logged in');
+       //res.status(400).send('You are not logged in');
+       res.send(false);
    }
 });
 
