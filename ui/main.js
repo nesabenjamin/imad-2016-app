@@ -50,7 +50,7 @@ console.log('Loaded!');
     
     
 
-function logIN (){
+function logIN(){
         //alert("innn");
 	var template =`<center>
                 <div><br/>
@@ -156,6 +156,7 @@ function register(){
                 if(request.status === 200){
                     alert(request.responseText);
                     //alert('user created successfully');
+                    logIN();
                 }else{
                     alert(request.responseText);
                     //alert('could not register the user');
