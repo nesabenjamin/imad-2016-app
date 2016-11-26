@@ -15,7 +15,8 @@ function show_comments(){
                     document.getElementById('div2').innerHTML=``;
                     for (var i=0; i< commentsData.length; i++) {
                         var date = commentsData[i].date;
-                        //date = date.toDateString();
+                        //var date = new Date(commentsData[i].date);
+                        //${date.toLocaleDateString();
                         document.getElementById('div2').innerHTML +=  `
                             <p class="tright italics">${date}</p>
                             <p class="tright red italics">${commentsData[i].username}</p>
