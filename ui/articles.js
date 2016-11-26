@@ -130,12 +130,12 @@ function register(){
         request.onreadystatechange = function(){
             if(request.readyState === XMLHttpRequest.DONE){
                 if(request.status === 200){
-                    alert(request.responseText);
-                    //alert('user created successfully');
+                    //alert(request.responseText);
+                    alert('user created successfully');
                     logIN();
                 }else{
-                    alert(request.responseText);
-                    //alert('could not register the user');
+                    //alert(request.responseText);
+                    alert('could not register the user');
                 }
             }
         };
