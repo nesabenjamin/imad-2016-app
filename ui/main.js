@@ -15,7 +15,7 @@ function logIN(){
                     <button onclick="loggingin()" id="logbut" class="but">Login</button>
     	    	    </div></center>`;  
 	var div3 = document.getElementById("div3");
-			div3.innerHTML = template;
+	div3.innerHTML = template;
 }
 
 
