@@ -226,16 +226,9 @@ function checklogin(){
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
-                //alert(this.responseText);
-                //var result = JSON.parse(this.responseText);
-                if (this.responseText) {
-                    //res.status(400).send('Not logged in');
-                   //return false;
+                if (this.responseText === true) {
                    closex()
-                }else if(!this.responseText){
-                    //var username = result.rows[0].username;
-                    //alert(username+" Logged in");
-                    //return true;
+                }else if(this.responseText === false){
                     openx();
                 }
             } else {
