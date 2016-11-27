@@ -227,9 +227,9 @@ function checklogin(){
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
                 console.log(this.responseText);
-                if (this.responseText === true) {
+                if (this.responseText === "true") {
                    closex();
-                }else if(this.responseText === false){
+                }else if(this.responseText === "false"){
                     openx();
                 }
             } else {
