@@ -152,7 +152,7 @@ strong{
 input,textarea{
     background-color :#ebf0fa;
 	border: 1px solid #adc2eb;
-	border-radius:2px;
+	border-radius:1px;
 	}
 #div3 input:focus, textarea:focus{
 	background-color:#ebf0fa;
@@ -258,7 +258,7 @@ input,textarea{
 input,textarea{
     background-color :#ebf0fa;
     border: 1px solid #adc2eb;
-    border-radius:2px;
+    border-radius:1px;
     }
 .divmodal input:focus, textarea:focus{
     background-color:#ebf0fa;
