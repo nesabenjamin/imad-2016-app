@@ -55,6 +55,7 @@ function add_comments(){
                 }else{
                     alert(request.responseText);
                     //alert('only login user can comment');
+                    openx();
                 }
             }
         };
