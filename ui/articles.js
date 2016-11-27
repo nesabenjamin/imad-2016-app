@@ -232,7 +232,7 @@ function checklogin(){
                     //res.status(400).send('Not logged in');
                    //return false;
                    closex()
-                }else{
+                }else if(!this.responseText){
                     //var username = result.rows[0].username;
                     //alert(username+" Logged in");
                     //return true;
