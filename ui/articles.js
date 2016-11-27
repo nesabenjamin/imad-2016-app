@@ -1,4 +1,8 @@
+window.onload = checklogin();
+
 console.log('Loaded!');
+
+
 
 function show_comments(){
     var currentArticleTitle = window.location.pathname.split('/')[2];
@@ -222,20 +226,21 @@ function checklogin(){
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
-               alert(this.responseText);
-                var result = JSON.parse(this.responseText);
-                if (result.rows.length === 0) {
+                //alert(this.responseText);
+                //var result = JSON.parse(this.responseText);
+                if (this.responseText) {
                     //res.status(400).send('Not logged in');
                    //return false;
+                   closex()
                 }else{
                     //var username = result.rows[0].username;
                     //alert(username+" Logged in");
                     //return true;
-                    closex();
+                    openx();
                 }
             } else {
                 //alert();
-                return false;
+                //return false;
             }
         }
     };    
