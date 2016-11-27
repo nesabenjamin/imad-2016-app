@@ -196,8 +196,9 @@ function register1(){
 
 var loginlink = document.getElementById("loginlink");
 loginlink.onclick = function(){
-    var currentArticleTitle = window.location.pathname;
-    window.location = currentArticleTitle;
+    //var currentArticleTitle = window.location.pathname;
+    //window.location = currentArticleTitle;
+    openx();
     return false;
 }; 
 
