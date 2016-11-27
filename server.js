@@ -86,7 +86,7 @@ var htmlTemplate = `
 
                 <div id="myModalWindow">
                 <div id="myModal">
-                <p id="xp"><button id="x" onclick="closex()" ><img src="/ui/close.png" id="closepng"/></button></p><hr/>            
+                <p id="xp"><button id="x" onclick="closex()" >x</button></p><hr/>            
 
                     <button onclick="logIN()" class="butm fleft" id="logIN">Log <span class="bold" id="slogIN">IN</span>
                     </button>            
