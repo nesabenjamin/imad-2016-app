@@ -302,8 +302,12 @@ app.get('/check-login', function (req, res) {
 });
 
 app.get('/logout', function (req, res) {
-   delete req.session.auth;
-   res.send('Logged out!');
+   if (req.session && req.session.auth && req.session.auth.userId) {
+        delete req.session.auth;
+        res.send('Logged out!');
+   }else{
+       res.send('No user logged in!');
+   }
 });
 
 
