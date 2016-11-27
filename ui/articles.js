@@ -227,7 +227,7 @@ function checklogin(){
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
                 if (this.responseText === true) {
-                   closex()
+                   closex();
                 }else if(this.responseText === false){
                     openx();
                 }
