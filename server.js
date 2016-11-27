@@ -287,10 +287,12 @@ app.get('/check-login', function (req, res) {
        // Load the user object
        pool.query('SELECT * FROM "hash" WHERE id = $1', [req.session.auth.userId], function (err, result) {
            if (err) {
-              res.status(500).send(err.toString());
+              //res.status(500).send(err.toString());
+               res.send('false');
            } else {
               //res.send(result.rows[0].id.toString());
-              res.send(JSON.stringify(result.rows));
+              //res.send(JSON.stringify(result.rows));
+              res.send('true');
            }
        });
    } else {
