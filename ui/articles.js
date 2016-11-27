@@ -14,11 +14,11 @@ function show_comments(){
                     //alert(commentsData[0].comments);
                     document.getElementById('div2').innerHTML=``;
                     for (var i=0; i< commentsData.length; i++) {
-                        var date = commentsData[i].date;
-                        //var date = new Date(commentsData[i].date);
-                        //${date.toLocaleDateString();
+                        //var date = commentsData[i].date;
+                        var date = new Date(commentsData[i].date);
+                        //${date.toLocaleDateString()};
                         document.getElementById('div2').innerHTML +=  `
-                            <p class="tright italics">${date}</p>
+                            <p class="tright italics">${date.toLocaleDateString()}</p>
                             <p class="tright red italics">${commentsData[i].username}</p>
                             <p class="tright italics">${commentsData[i].comment}</p>
                             <hr/><br/>`;
