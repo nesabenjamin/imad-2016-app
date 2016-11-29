@@ -136,7 +136,7 @@ var htmlTemplate = `
               </div>
               </div>
  </div>
-          </div><br/><br/>
+          </div><br/><br/><br/>
           <script type="text/javascript" src="/ui/articles.js"></script>
         </body>
         </html>`;
