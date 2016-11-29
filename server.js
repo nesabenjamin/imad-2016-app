@@ -81,7 +81,7 @@ var htmlTemplate = `
             </div>
             <div id="content"><br/><br/><br/>${content}</div>               
             </div>
-            <input type="button" onclick="show_comments()" value="COMMENTS" class= "commentbut"><br/><br/>
+            <input type="button" onclick="show_comments()" value="COMMENTS" class= "commentbut">
             <div id="div2"> </div>
             <div id="div3"> </div>
             <div id="div4">
