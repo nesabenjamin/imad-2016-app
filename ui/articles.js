@@ -32,12 +32,12 @@ function show_comments(){
             }
         }
     };
-    var template = `<div><br/><br/>
+    var template = `<div><br/>
             <label for="message">Leave Comment</label>
             <textarea name="message" id="message" rows="5" cols="50"></textarea>
             </div>                
             <div><br/>
-            <input type="submit" onclick="add_comments()" value="Post a Comment" id="" class= "but"/><br/><br/>
+            <input type="submit" onclick="add_comments()" value="Post a Comment" id="" class= "but"/><br/>
             </div>`;
     document.getElementById("div3").innerHTML=template;
     
