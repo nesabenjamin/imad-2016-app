@@ -42,6 +42,8 @@ var htmlTemplate = `
         <html>
         <head>
           <title> ${title}</title>
+          <link rel="shortcut icon" href="/ui/cooltext_ICO.png" type="image/png">
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <link rel="stylesheet" type="text/css" href="/ui/newarticle.css">
         </head>
         <body>
